@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Void Clash &#151; A punchy spaceship video-game</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+  </head>
+
+  <body ng-controller="IndexCtrl">
+    <div>
+      <div class="container" style="position:relative">
+	<div class="u-max-full-width header" style="z-index:99; width: 100%; position:absolute;">
+	  <div class="row">
+	    <div class="two columns">
+	      <img src="images/voidclash.svg" width="125">
+	    </div>
+	    <div class="six columns">
+	      <nav class="navbar">
+		<ul class="navbar-list">
+		  <li class="navbar-item"><a class="navbar-link" href="#" translate="nav.game"></a></li>
+		  <li class="navbar-item"><a class="navbar-link" href="#" translate="nav.news"></a></li>
+		  <li class="navbar-item"><a class="navbar-link" href="#" translate="nav.community"></a></li>
+		  <li class="navbar-item"><a class="navbar-link" href="#" translate="nav.support"></a></li>
+		  <li class="navbar-item"><a class="navbar-link" href ng-click="changeLang('fr')" translate="lang.fr"></a></li>
+		  <li class="navbar-item"><a class="navbar-link" href ng-click="changeLang('en')" translate="lang.en"></a></li>
+		</ul>
+	      </nav>
+	    </div>
+	    <div class="four columns socials">
+	      <a href="#"><button class="button" translate="nav.greenlight"></button></a>
+	      <a href="https://www.facebook.com/voidclash"><button class="button fb">F</button></a>
+	      <a href="https://twitter.com/voidclash" target="_blank"><button class="button tw">T</button></a>
+	      <a href="https://www.youtube.com/channel/UC961h0-47wv4ndkU8HwRARA" target="_blank"><button class="button yt">Y</button></a>
+	    </div>
+	  </div>
+	</div>
+      </div>
+      <div class="slider slider-for home-background" style="position:relative;max-height:90%;">
+	<div class="first">
+	  <div class="container">
+	    <div class="u-max-full-width intro">
+	      <div>
+                <p translate="headline.greenlight"></p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<div class="second">
+	  <div class="container">
+	    <div class="u-max-full-width intro">
+	      <div>
+                <p translate="headline.competitive"></p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="third">
+	  <div class="container">
+	    <div class="u-max-full-width intro">
+	      <div>
+                <p translate="headline.user_friendly"></p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="fourth">
+	  <div class="container">
+	    <div class="u-max-full-width intro">
+	      <div>
+		<p translate="headline.guns"></p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+      <div class="container" style="position:relative; margin-top: -190px;">
+	<div class="u-max-full-width">
+	  <div class="slider slider-nav">
+	    <div class="itm"><img src="images/background.jpg" width="100%">
+	      <p translate="headline.greenlight"></p>
+	    </div>
+	    <div class="itm"><img src="images/bg2.jpg" width="100%">
+	      <p translate="headline.competitive"></p>
+	    </div>
+	    <div class="itm"><img src="images/bg3.jpg" width="100%">
+	      <p translate="headline.user_friendly"></p>
+	    </div>
+	    <div class="itm"><img src="images/bg4.jpg" width="100%">
+	      <p translate="headline.guns"></p>
+	    </div>
+	  </div>
+	</div>
+
+	<script type="text/javascript">
+	 $('.slider-for').slick({
+	   autoplay: true,
+	   autoplaySpeed: 5000,
+	   slidesToShow: 1,
+	   slidesToScroll: 1,
+	   arrows: false,
+	   fade: true,
+	   asNavFor: '.slider-nav'
+	 });
+	 $('.slider-nav').slick({
+	   autoplay: true,
+	   slidesToShow: 4,
+	   slidesToScroll: 0,
+	   asNavFor: '.slider-for',
+	   dots: false,
+	   centerMode: false,
+	   focusOnSelect: true
+	 });
+	</script>
+      </div>
+    </div>
+    </div>
+
+    <div class="news">
+      <div class="container u-max-full-width">
+	<div class="row">
+	  <h2 class="uppercase" translate="news.title"></h2>
+	</div>
+	<div class="row">
+	  <div class="three columns">
+	    <h5>Introducing the last update</h5>
+	    <img src="http://placehold.it/250x250" width="100%">
+	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	      tempor incididunt ut labore et dolore magna aliqua.</p>
+	    <span style="text-align:right"><a href="#">Read more →</a></span>
+	  </div>
+	  <div class="three columns">
+	    <h5>Introducing the last update</h5>
+	    <img src="http://placehold.it/250x250" width="100%">
+	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	      tempor incididunt ut labore et dolore magna aliqua.</p>
+	    <span style="text-align:right"><a href="#">Read more →</a></span>
+	  </div>
+	  <div class="three columns">
+	    <h5>Introducing the last update</h5>
+	    <img src="http://placehold.it/250x250" width="100%">
+	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	      tempor incididunt ut labore et dolore magna aliqua.</p>
+	    <span style="text-align:right"><a href="#">Read more →</a></span>
+	  </div>
+	  <div class="three columns">
+	    <h5>Introducing the last update</h5>
+	    <img src="http://placehold.it/250x250" width="100%">
+	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	      tempor incididunt ut labore et dolore magna aliqua.</p>
+	    <span style="text-align:right"><a href="#">Read more →</a></span>
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    <div style="position: relative;">
+      <div class="container greenlight">
+	<div class="u-max-full-width">
+	  <a href="#"><img src="images/greenlight-pickup.png" alt="thumb up for Void Clash" width="70%"></a>
+	</div>
+      </div>
+    </div>
+
+    <div class="game-concept">
+      <div class="container u-max-full-width">
+	<div class="row">
+	  <h2 class="uppercase" translate="concept.title"></h2>
+	  <p translate="concept.description"></p>
+	</div>
+
+	<div class="row">
+	  <div class="four columns">
+	    <h4 translate="concept.gameplay.title"></h4>
+	    <p translate="concept.gameplay.description"></p>
+	  </div>
+	  <div class="four columns">
+	    <h4 translate="concept.guns.title"></h4>
+	    <p translate="concept.guns.description"></p>
+	  </div>
+	  <div class="four columns">
+	    <h4 translate="concept.team.title"></h4>
+	    <p translate="concept.team.description"></p>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="four columns">
+	    <h4 translate="concept.mods.title"></h4>
+	    <p translate="concept.mods.description"></p>
+	  </div>
+	  <div class="four columns">
+	    <h4 translate="concept.matchmaking.title"></h4>
+	    <p translate="concept.matchmaking.description"></p>
+	  </div>
+	  <div class="four columns">
+	    <h4 translate="concept.user_friendly.title"></h4>
+	    <p translate="concept.user_friendly.description"></p>
+	  </div>
+	</div> <!-- END ROW -->
+      </div> <!-- END CONTAINER -->
+    </div> <!-- END GAME CONCEPT -->
+
+    <div class="game-mode">
+      <div class="container u-max-full-width">
+	<h2 class="uppercase" translate="modes.title"></h2>
+	<p translate="modes.description"></p>
+      </div>
+      <div class="u-max-full-width">
+	<div class="slider game-mod">
+	  <div class="mod">
+	    <img src="images/capture-the-flag.svg" alt="Capture The Flag" />
+	    <div>
+	      <h3 translate="modes.ctf.title"></h3>
+	      <p translate="modes.ctf.description"></p>
+	    </div>
+	  </div>
+
+	  <div class="mod">
+	    <img src="images/king-of-the-hill.svg" alt="Free For All" />
+	    <div>
+	      <h3 translate="modes.ffa.title"></h3>
+	      <p translate="modes.ffa.description"></p>
+	    </div>
+	  </div>
+
+	  <div class="mod">
+	    <img src="images/horde.svg" alt="Horde" />
+	    <div>
+	      <h3 translate="modes.horde.title"></h3>
+	      <p translate="modes.horde.description"></p>
+	    </div>
+	  </div>
+
+	  <div class="mod">
+	    <img src="images/king-of-the-hill.svg" alt="King Of The Hill" />
+	    <div>
+	      <h3>King Of The Hill</h3>
+	      <p>Everyone is fighting to occup a specific map zone and keep it safe from opponents attacks. The team who keep more longer the zone whitin the round time won !
+	      </p>
+	    </div>
+	  </div>
+
+	  <div class="mod">
+	    <img src="images/survivor.svg" alt="Survivor" />
+	    <div>
+	      <h3>Survivor</h3>
+	      <p>Like in the FFA mod, you are fighting against others except if someone die, he will respawn at the next round. There will be only one left at the end !
+	      </p>
+	    </div>
+	  </div>
+
+	  <div class="mod">
+	    <img src="images/team-deathmatch.svg" alt="Team Deathmatch" />
+	    <div>
+	      <h3>Team Deathmatch</h3>
+	      <p>Probably the most known mod on the earth and in the void arena, the goal is the same : Kill and kill again until the round's end. Keep in mind that your score is made with your kill and death ratio !
+	      </p>
+	    </div>
+	  </div>
+
+	  <div class="mod">
+	    <img src="images/team-survivor.svg" alt="Team Survivor" />
+	    <div>
+	      <h3>Team Survivor</h3>
+	      <p>Like in the FFA mod, you are fighting against the opponents team except if someone die, he will respawn at the next round. There will be only one left at the end !
+	      </p>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+    <script type="text/javascript">			
+     $('.game-mod').slick({
+       centerMode: true,
+       centerPadding: '60px',
+       slidesToShow: 3,
+       focusOnSelect: true,
+       arrows: false,
+       responsive: [
+	 {
+	   breakpoint: 768,
+	   settings: {
+	     arrows: false,
+	     centerMode: true,
+	     centerPadding: '40px',
+	     slidesToShow: 3
+	   }
+	 },
+	 {
+	   breakpoint: 480,
+	   settings: {
+	     arrows: false,
+	     centerMode: true,
+	     centerPadding: '40px',
+	     slidesToShow: 1
+	   }
+	 }
+       ]
+     });
+    </script>
+
+    <div class="game-weapon">
+      <div class="container">
+	<div class="eight columns row">
+	  <h2 class="uppercase" style="border-bottom: solid 2px rgba(160, 196, 35, 1);">
+	    <strong>The badass</strong> weapon system</h2>
+	  <p></p>
+	</div>
+	<div class="row">
+	  <div class="six columns"><img src="images/weapons.png" width="100%"></div>
+	  <div class="six columns">
+	    <h6 class="uppercase" style="margin-top: 100px;">
+	      ⤷ <strong>Create your weapons</strong> and 
+	      <strong>totally customize them</strong> with more than <em>ten parameters</em> !
+	    </h6>
+
+	    <h6 class="uppercase" style="margin-top: 25px;">
+	      ⤷ Choose between <strong>six weapon categories</strong> 
+	      including the totally <strong>crazy <u>Engine</u> weapon</strong> ! 
+	    </h6>
+	  </div>
+	</div>
+	<div class="row">
+	  <h4 class="uppercase" style="text-align:center;margin-top:50px;">
+	    <strong>Which kind of killer are you ?</strong>
+	  </h4>
+	  <div class="slider weapon-slide">
+	    <div class="weapon">
+	      <img src="images/bomb.svg" width="150">
+	      <h5 class="uppercase">Bomb</h5>
+	      <p>Someone wants to destroy an entire fleet ? 
+		<br>By optimising some other parameters, you will be able to strike in the opponent base !
+	      </p>
+	    </div>
+	    <div class="weapon">
+	      <img src="images/bullet.svg" width="150">
+	      <h5 class="uppercase">Bullet</h5>
+	      <p>It represent all kind of weapons you can use to harass your enemy.
+		<br>A machine gun or a sniper can be your friends to win.
+		
+	      </p>
+	    </div>
+
+	    <div class="weapon">
+	      <img src="images/engine.svg" width="150">
+	      <h5 class="uppercase">Engine</h5>
+	      <p>Engine weapons are your peace-keeper !<br>
+		They allow you to absorb enemy shots, regenere life and give you more speed.
+	      </p>
+	    </div>
+
+	    <div class="weapon">
+	      <img src="images/rocket.svg" width="150">
+	      <h5 class="uppercase">Rocket</h5>
+	      <p>What could be better than a missile to disperse your opponent's remains in the void ? 
+		<br>
+		<br>Where you run it, it will explode !</p>
+	    </div>
+
+	    <div class="weapon">
+	      <img src="images/turret.svg" width="150">
+	      <h5 class="uppercase">Turret</h5>
+	      <p>Turrets are redoubtable for your enemy !
+		<br>It targets and locks your enemy's position and then fire them when it is possible.
+	      </p>
+	    </div>
+	  </div>
+	  <script type="text/javascript">			
+	   $('.weapon-slide').slick({
+	     centerMode: true,
+	     centerPadding: '60px',
+	     slidesToShow: 3,
+	     focusOnSelect: true,
+	     arrows: true,
+	     responsive: [
+	       {
+		 breakpoint: 768,
+		 settings: {
+		   arrows: true,
+		   centerMode: true,
+		   centerPadding: '40px',
+		   slidesToShow: 3
+		 }
+	       },
+	       {
+		 breakpoint: 480,
+		 settings: {
+		   arrows: true,
+		   centerMode: true,
+		   centerPadding: '40px',
+		   slidesToShow: 1
+		 }
+	       }
+	     ]
+	   });
+	  </script>
+	</div>
+      </div>
+    </div>
+
+    <div class="newsletter">
+      <div class="container">
+	<div class="six columns">
+	  <label for="exampleEmailInput">STAY CONNECTED #VOIDCLASHGAME</label>
+          <form ng-submit="submitEmail()">
+	    <input class="u-full-width" type="email" placeholder="Enter your email" id="exampleEmailInput" ng-model="form.email" ng-hide="form.hide">
+            <p ng-show="form.hide">Thank you !</p>
+          </form>
+	  <p>
+	    <a href="#">Facebook</a>
+	    <a href="#">Twitter</a>
+	    <a href="#">Youtube</a>
+	    <a href="#">Greenlight</a>
+	    <a href="#">Indiedb</a>
+	  </p>
+	</div>
+      </div>
+    </div>
+
+    <div class="partners">
+      <div class="container">
+	<a href="#">
+	  <img src="images/greenlight.png" width="150" height="86" style="padding: 5px">
+	  <img src="images/gdl.png" width="150" height="86" style="padding: 5px">
+	  <img src="images/epitech.png" width="150" height="86" style="padding: 5px">
+	</a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container">
+	<div class="ten columns">
+	  <a href="#">Legal Mentions</a>
+	  <a href="#">Privacy Policy</a>
+	  <a href="#">Support</a>
+	  <a href="http://steamcommunity.com/greenlight" target="_blank">Greenlight</a>
+	  <a href="http://gdl.epitech.eu/" target="_blank">GDL</a>
+	  <a href="http://eip.epitech.eu/" target="_blank">EIP</a>
+	</div>
+	<div class="two columns">
+	  Void Clash &copy 2015
+	</div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.7.0/angular-translate.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
