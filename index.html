@@ -42,10 +42,10 @@
 						<a href="https://www.youtube.com/channel/UC961h0-47wv4ndkU8HwRARA" target="_blank"><button class="button yt">Y</button></a>
 						<nav class="navitup">
 							<ul clas="navbar-list">
-								<li class="navbar-item"><a class="navbar-link" href="#"><img src="images/english.png" alt="" width="20"></a>
+								<li class="navbar-item"><a class="navbar-link" href="#"><img ng-src="images/{{lang.value == 'en' ? 'english' : 'france'}}.png" alt="" width="20"></a>
 									<ul>
-										<li><a class="navbar-link" href ng-click="changeLang('fr')" translate="lang.fr"></a></li>
-										<li><a class="navbar-link" href ng-click="changeLang('en')" translate="lang.en"></a></li>
+										<li><a class="navbar-link" href ng-click="lang.set('fr')" translate="lang.fr"></a></li>
+										<li><a class="navbar-link" href ng-click="lang.set('en')" translate="lang.en"></a></li>
 									</ul>
 								</li>
 							</ul>

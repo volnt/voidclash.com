@@ -2,8 +2,12 @@ var app = angular.module("app", ["pascalprecht.translate"]);
 
 app.controller("IndexCtrl", function($scope, $http, $translate) {
 
-  $scope.changeLang = function (lang) {
-    $translate.use(lang);
+  $scope.lang = {
+    value: 'en',
+    set: function (val) {
+      this.value = val;
+      $translate.use(val);
+    },
   };
 
   $scope.submitEmail = function () {
@@ -15,12 +19,7 @@ app.controller("IndexCtrl", function($scope, $http, $translate) {
       $scope.form.hide = false;
     });
   };
-
-  (function () {
-
-  })();
 });
-
 
 app.config(function ($translateProvider) {
   $translateProvider.translations('en', {
