@@ -118,7 +118,15 @@ app.config(function ($translateProvider) {
         title: "Zone",
         description: " Zone"
       }
+    },
+    newsletter: {
+      title: "STAY CONNECTED #VOIDCLASHGAME"
+    },
+    footer: {
+      lm : "Legal Mentions",
+      pp: "Privacy Policy"
     }
+
   });
 
   $translateProvider.translations('fr', {
@@ -216,6 +224,13 @@ app.config(function ($translateProvider) {
         title: "Zone",
         description: " Zone"
       }
+    },
+    newsletter: {
+      title: "RESTEZ CONNECTÉ #VOIDCLASHGAME"
+    },
+    footer: {
+      lm : "Mentions Légales",
+      pp: "Confidentialité"
     }
   });
 
