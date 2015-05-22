@@ -32,8 +32,7 @@ app.config(function ($translateProvider) {
       game: "Game",
       news: "News",
       community: "Community",
-      support: "Support",
-      greenlight: "Greenlight us"
+      greenlight: "Greenlit us"
     },
     headline: {
       greenlight: "Join us and help us to be <strong>Greenlit</strong> !",
@@ -86,7 +85,39 @@ app.config(function ($translateProvider) {
       horde: {
         title: "Horde",
         description: "Like in the FFA mod, you are alone except this time, tones of spacecrafts are comming by wave to erradicate your life ! When you die in this mod, your respawn will be the next round. <strong>You can active this mod in every others mod !</strong>"
+      }
+    },
+    weapon: {
+      title: "<strong>The badass</strong> weapon system",
+      description: {
+        first: "⤷ <strong>Create your weapons</strong> and <strong>totally customize them</strong> with more than <em>ten parameters</em> !",
+        second: "⤷ Choose between <strong>six weapon categories</strong> including the totally <strong>crazy <u>Engine</u> weapon</strong> !"
       },
+      subtitle: "<strong>Which kind of killer are you ?</strong>",
+      bomb: {
+        title: "Bomb",
+        description: "Someone wants to destroy an entire fleet ? <br>By optimising some other parameters, you will be able to strike in the opponent base !"
+      },
+      bullet: {
+        title: "Bullet",
+        description: "It represent all kind of weapons you can use to harass your enemy.<br>A machine gun or a sniper can be your friends to win."
+      },
+      engine: {
+        title: "Engine",
+        description: "Engine weapons are your peace-keeper !<br> They allow you to absorb enemy shots, regenere life and give you more speed."
+      },
+      rocket: {
+        title: "Rocket",
+        description: "What could be better than a missile to disperse your opponent's remains in the void ? <br><br>Where you run it, it will explode !"
+      },
+      turret: {
+        title: "Turret",
+        description: "Turrets are redoubtable for your enemy !<br>It targets and locks your enemy's position and then fire them when it is possible."
+      },
+      zone: {
+        title: "Zone",
+        description: " Zone"
+      }
     }
   });
 
@@ -97,29 +128,28 @@ app.config(function ($translateProvider) {
     },
     nav: {
       game: "Jeu",
-      news: "Nouveautés",
+      news: "Actualités",
       community: "Communauté",
-      support: "Support",
       greenlight: "Greenlightez nous"
     },
     headline: {
       greenlight: "Rejoignez nous et aidez nous à être <strong>Greenlighté</strong> !",
-      competitive: "Un shoot'em up arena <strong>rapide</strong>, <strong>en ligne</strong> et<br /> <strong>compétitif</strong>.",
+      competitive: "Un shoot'em up complètement <br><strong>fou</strong>, <strong>en ligne</strong> et <strong>compétitif</strong>.",
       user_friendly: "Une interface complète et <strong>intuitive</strong>.",
       guns: "Un système d'arme <strong>badass</strong> !",
     },
     news: {
-      title: "<strong>Dernières nouveautées</strong> sur le blog"
+      title: "<strong>Quoi de neuf ?</strong> "
     },
     concept: {
-      title: "<strong>Le jeu</strong> aperçu",
-      description: "Void Clash est un shoot'em up arena rapide, en ligne et compétitif. Ca vous apporte un mélange innovant de différents concept du jeu vidéo.<br>En controllant un vaisseau vu de dessus, vous devez battre vos ennemies pendant d'incroyables combats en arènes.<br>Void Clash vous offre aussi une totale possibilité de personnalisation ! Les joueurs peuvent créer leur propre arène et configurer leurs vaisseaux ainsi que leurs armes.<br>Void Clash vous offre une progression interessante et motivante dans un univers compétitif et intéractif !",
+      title: "<strong>Le jeu</strong> en aperçu",
+      description: "Void Clash est un shoot'em up arena rapide, en ligne et compétitif. Ca vous apporte un mélange innovant de différents concept du jeu vidéo. En controllant un vaisseau vu de dessus, vous devez battre vos ennemies pendant d'incroyables combats en arènes.<br>Void Clash vous offre aussi une totale possibilité de personnalisation ! Les joueurs peuvent créer leur propre arène et configurer leurs vaisseaux ainsi que leurs armes. Le jeu vous offre une progression interessante et motivante dans un univers compétitif et intéractif !",
       gameplay: {
         title: "Un gameplay innovant",
-        description: "Très concentré sur le skill individuel et le travail d'équipe, <br> le nouveau gameplay de Void Clash vous imergera dans d'intenses batailles dans l'arène où gérer votre inertie, <br>votre énergie et anticiper les mouvements de vos ennemis feront  parti de votre guerre !"
+        description: "Très concentré sur le skill individuel et le travail d'équipe, le nouveau gameplay de Void Clash vous imergera dans d'intenses batailles dans l'arène où gérer votre inertie, votre énergie et anticiper les mouvements de vos ennemis feront  parti de votre guerre !"
       },
       guns: {
-        title: "Un système d'arme babass",
+        title: "Une infinité d'armes",
         description: "Le jeu vous permet de choisir entre six catégories d'arme entièrement personnalisable avec plus de dix paramètres à modifier comme les dégats d'impact, la portée, et beaucoup plus !"
       },
       team: {
@@ -131,16 +161,16 @@ app.config(function ($translateProvider) {
         description: "Peut être que vous être un voleur de drapeau, ou un serial tireur ?<br>Peut importe, vous pouvez trouver ce qui décrit le mieux votre style avec six modes de jeu disponibles, seul ou à plusieurs !"
       },
       matchmaking: {
-        title: "Un système de matchmaking",
+        title: "Le matchmaking",
         description: "Compétiteur ou simple joueur casuel, vous serez capable de trouver le type de partie que vous voulez : <br>Jeux d'arcade ou Jeux classés avec le système de matchmaking."
       },
       user_friendly: {
-        title: "Interface intuitive",
+        title: "Une interface simple",
         description: "Void Clash comprend une interface de jeu complète, avec un launcher qui intègre la SDK Steam, <br>un client de jeu et un éditeur de carte."
       }
     },
     modes: {
-      title: "<strong>Voleur de drapeau</strong> ou serial tireur ?",
+      title: "<strong>Voleur</strong> ou <strong>serial killer</strong> ?",
       description: "Roi de la galaxie, Tueur ou Voleur de drapeau, vous pourrez choisir quel mode est votre préféré.<br>Associé avec tous ces modes, vous pourrez activer le mode Horde pour rendre le jeu plus drôle (et plus dur) !",
       ctf: {
         title: "Capture de drapeau",
@@ -153,7 +183,39 @@ app.config(function ($translateProvider) {
       horde: {
         title: "Horde",
         description: "Like in the FFA mod, you are alone except this time, tones of spacecrafts are comming by wave to erradicate your life ! When you die in this mod, your respawn will be the next round. <strong>You can active this mod in every others mod !</strong>"
+      }
+    },
+    weapon: {
+      title: "Un système d'arme <strong>badass</strong>",
+      description: {
+        first: "⤷ <strong>Create your weapons</strong> and <strong>totally customize them</strong> with more than <em>ten parameters</em> !",
+        second: "⤷ Choose between <strong>six weapon categories</strong> including the totally <strong>crazy <u>Engine</u> weapon</strong> !"
       },
+      subtitle: "<strong>Which kind of killer are you ?</strong>",
+      bomb: {
+        title: "Bomb",
+        description: "Someone wants to destroy an entire fleet ? <br>By optimising some other parameters, you will be able to strike in the opponent base !"
+      },
+      bullet: {
+        title: "Bullet",
+        description: "It represent all kind of weapons you can use to harass your enemy.<br>A machine gun or a sniper can be your friends to win."
+      },
+      engine: {
+        title: "Engine",
+        description: "Engine weapons are your peace-keeper !<br> They allow you to absorb enemy shots, regenere life and give you more speed."
+      },
+      rocket: {
+        title: "Rocket",
+        description: "What could be better than a missile to disperse your opponent's remains in the void ? <br><br>Where you run it, it will explode !"
+      },
+      turret: {
+        title: "Turret",
+        description: "Turrets are redoubtable for your enemy !<br>It targets and locks your enemy's position and then fire them when it is possible."
+      },
+      zone: {
+        title: "Zone",
+        description: " Zone"
+      }
     }
   });
 

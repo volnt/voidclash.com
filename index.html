@@ -31,7 +31,6 @@
 		  <li class="navbar-item"><a class="navbar-link" href="#" translate="nav.game"></a></li>
 		  <li class="navbar-item"><a class="navbar-link" href="#" translate="nav.news"></a></li>
 		  <li class="navbar-item"><a class="navbar-link" href="#" translate="nav.community"></a></li>
-		  <li class="navbar-item"><a class="navbar-link" href="#" translate="nav.support"></a></li>
 		</ul>
 	    </nav>
 	    </div>
@@ -116,7 +115,6 @@
 	<script type="text/javascript">
 	 $('.slider-for').slick({
 	   autoplay: true,
-	   autoplaySpeed: 5000,
 	   slidesToShow: 1,
 	   slidesToScroll: 1,
 	   arrows: false,
@@ -125,6 +123,7 @@
 	 });
 	 $('.slider-nav').slick({
 	   autoplay: true,
+	   autoplaySpeed: 3000,
 	   slidesToShow: 4,
 	   slidesToScroll: 0,
 	   asNavFor: '.slider-for',
@@ -324,67 +323,52 @@
     <div class="game-weapon">
       <div class="container">
 	<div class="eight columns row">
-	  <h2 class="uppercase" style="border-bottom: solid 2px rgba(160, 196, 35, 1);">
-	    <strong>The badass</strong> weapon system</h2>
+	  <h2 class="uppercase" style="border-bottom: solid 2px rgba(160, 196, 35, 1);" translate="weapon.title"></h2>
 	  <p></p>
 	</div>
 	<div class="row">
 	  <div class="six columns"><img src="images/weapons.png" width="100%"></div>
 	  <div class="six columns">
-	    <h6 class="uppercase" style="margin-top: 100px;">
-	      ⤷ <strong>Create your weapons</strong> and 
-	      <strong>totally customize them</strong> with more than <em>ten parameters</em> !
-	    </h6>
-
-	    <h6 class="uppercase" style="margin-top: 25px;">
-	      ⤷ Choose between <strong>six weapon categories</strong> 
-	      including the totally <strong>crazy <u>Engine</u> weapon</strong> ! 
-	    </h6>
+	    <h6 class="uppercase" style="margin-top: 100px;" translate="weapon.description.first"></h6>
+	    <h6 class="uppercase" style="margin-top: 25px;" translate="weapon.description.second"></h6>
 	  </div>
 	</div>
 	<div class="row">
-	  <h4 class="uppercase" style="text-align:center;margin-top:50px;">
-	    <strong>Which kind of killer are you ?</strong>
-	  </h4>
+	  <h4 class="uppercase" style="text-align:center;margin-top:50px;" translate="weapon.subtitle"></h4>
 	  <div class="slider weapon-slide">
 	    <div class="weapon">
 	      <img src="images/bomb.svg" width="150">
-	      <h5 class="uppercase">Bomb</h5>
-	      <p>Someone wants to destroy an entire fleet ? 
-		<br>By optimising some other parameters, you will be able to strike in the opponent base !
-	      </p>
+	      <h5 class="uppercase" translate="weapon.bomb.title"></h5>
+	      <p translate="weapon.bomb.description"></p>
 	    </div>
 	    <div class="weapon">
 	      <img src="images/bullet.svg" width="150">
-	      <h5 class="uppercase">Bullet</h5>
-	      <p>It represent all kind of weapons you can use to harass your enemy.
-		<br>A machine gun or a sniper can be your friends to win.
-		
-	      </p>
+	      <h5 class="uppercase" translate="weapon.bullet.title"></h5>
+	      <p translate="weapon.bullet.description"></p>
 	    </div>
 
 	    <div class="weapon">
 	      <img src="images/engine.svg" width="150">
-	      <h5 class="uppercase">Engine</h5>
-	      <p>Engine weapons are your peace-keeper !<br>
-		They allow you to absorb enemy shots, regenere life and give you more speed.
-	      </p>
+	      <h5 class="uppercase" translate="weapon.engine.title"></h5>
+	      <p></p>
 	    </div>
 
 	    <div class="weapon">
 	      <img src="images/rocket.svg" width="150">
-	      <h5 class="uppercase">Rocket</h5>
-	      <p>What could be better than a missile to disperse your opponent's remains in the void ? 
-		<br>
-		<br>Where you run it, it will explode !</p>
+	      <h5 class="uppercase" translate="weapon.rocket.title"></h5>
+	      <p translate="weapon.rocket.description"></p>
 	    </div>
 
 	    <div class="weapon">
 	      <img src="images/turret.svg" width="150">
-	      <h5 class="uppercase">Turret</h5>
-	      <p>Turrets are redoubtable for your enemy !
-		<br>It targets and locks your enemy's position and then fire them when it is possible.
-	      </p>
+	      <h5 class="uppercase" translate="weapon.turret.title"></h5>
+	      <p translate="weapon.turret.description"></p>
+	    </div>
+
+	    <div class="weapon">
+	      <img src="images/turret.svg" width="150">
+	      <h5 class="uppercase" translate="weapon.zone.title"></h5>
+	      <p translate="weapon.zone.description"></p>
 	    </div>
 	  </div>
 	  <script type="text/javascript">			
