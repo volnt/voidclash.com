@@ -672,6 +672,49 @@ hr {
   text-transform: uppercase;
 }
 
+.navitup {
+  width: 50px;
+  display: block;
+  position: relative;
+  float: right;
+}
+
+.navitup ul {
+    list-style:none;
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+.navitup ul a {
+    display:block;
+}
+
+.navitup ul li {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+.navitup ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    padding:0;
+}
+
+.navitup ul ul li {
+    float:none;
+    width:100%; /* set the width of dropdown */
+}
+
+.navitup ul li:hover > ul {
+    display:block;
+}
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
