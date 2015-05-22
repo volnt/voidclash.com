@@ -42,10 +42,10 @@
 						<a href="https://www.youtube.com/channel/UC961h0-47wv4ndkU8HwRARA" target="_blank"><button class="button yt">Y</button></a>
 						<nav class="navitup">
 							<ul clas="navbar-list">
-								<li class="navbar-item"><a class="navbar-link" href="#"><img ng-src="images/{{lang.value == 'en' ? 'english' : 'france'}}.png" alt="" width="20"></a>
+								<li class="navbar-item"><a class="navbar-link" href="#"><img ng-src="images/{{lang.value == 'en' ? 'english' : 'france'}}.png" alt="" width="20"> {{lang.value == 'en' ? 'en' : 'fr'}}</a>
 									<ul>
-										<li><a class="navbar-link" href ng-click="lang.set('fr')" translate="lang.fr"></a></li>
-										<li><a class="navbar-link" href ng-click="lang.set('en')" translate="lang.en"></a></li>
+										<li class="navbar-item"><a class="navbar-link" href ng-click="lang.set('fr')" translate="lang.fr"></a></li>
+										<li class="navbar-item"><a class="navbar-link" href ng-click="lang.set('en')" translate="lang.en"></a></li>
 									</ul>
 								</li>
 							</ul>
@@ -380,7 +380,7 @@
 					$('.weapon-slide').slick({
 						centerMode: true,
 						centerPadding: '60px',
-						slidesToShow: 1,
+						slidesToShow: 3,
 						focusOnSelect: true,
 						arrows: true,
 						responsive: [
@@ -390,7 +390,7 @@
 								arrows: true,
 								centerMode: true,
 								centerPadding: '40px',
-								slidesToShow: 3
+								slidesToShow: 1
 							}
 						},
 						{

@@ -719,8 +719,10 @@ hr {
 }
 
 .navitup ul a {
+    line-height: normal;
     display:block;
-}
+    margin: 13px 0 0 0;
+  }
 
 .navitup ul li {
     position:relative;
@@ -739,8 +741,13 @@ hr {
 
 .navitup ul ul li {
     float:none;
-    width:100%; /* set the width of dropdown */
+    width:29px;
 }
+
+.navitup ul li ul li a {
+    line-height: normal;
+}
+
 
 .navitup ul li:hover > ul {
     display:block;
