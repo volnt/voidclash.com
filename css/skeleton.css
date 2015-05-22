@@ -413,6 +413,9 @@ hr {
 
 .header {
   height: 6.5rem;
+  z-index:99;
+  width: 100%;
+  position:absolute;
 }
 
 .navbar {
@@ -450,6 +453,13 @@ hr {
 .home-background {
   top: 0;
   left: 0;
+  position:relative;
+  max-height:90%;
+}
+
+.slider-sw {
+  position:relative;
+  margin-top: -190px;
 }
 
 .first {
@@ -597,6 +607,23 @@ hr {
   background: rgba(160, 196, 35, 1);
 }
 
+.weapon-title {
+  border-bottom: solid 2px rgba(160, 196, 35, 1);
+}
+
+.weapon-first {
+  margin-top: 100px;
+}
+
+.weapon-second {
+  margin-top: 25px;
+}
+
+.weapon-subtitle {
+  text-align:center;
+  margin-top:50px;
+}
+
 .weapon-slide h5 {
   font-weight: bold;
 }
@@ -637,6 +664,10 @@ hr {
 
 .newsletter a:hover {
   color: rgba(160, 196, 35, 1); 
+}
+
+.main-greenlight {
+  position: relative;
 }
 
 .container.greenlight {
