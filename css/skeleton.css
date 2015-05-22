@@ -755,18 +755,103 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
-
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 320px) and (max-width: 750px) {
+  h2 {
+  font-size: 2.3rem;
+  line-height: 1.25;
+  letter-spacing: -.1rem;
+  }
+
+  h4 {
+  font-size: 1.6rem;
+  line-height: 1.35;
+  letter-spacing: -.08rem;
+  }
+
+  p {
+  font-size: 1rem;
+  text-align: justify;
+  }
+
+  .intro p {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  .slider-nav .slick-active {
+    padding-top: 0px;
+    border-top: solid 2px rgba(160, 196, 35, 1);
+  }
+
+  .itm {
+    border-top: solid 2px rgba(0, 0, 0, .5);
+    height: 40px;
+  }
+
+  .itm p {
+    font-size: 3pt;
+    position: absolute;
+    top: 12px;
+    width: 60px;
+  }
+
+  .mod img {
+  width: 150px;
+  margin: auto;
+  }
+
+  .mod h3 {
+    font-size: 1.4rem
+  }
+
+  .mod p {
+    text-align: left;
+  }
+
+  .weapon-first, .weapon-second {
+  text-align: center;
+  font-size: 1.2rem
+  }
+
+  .weapon-slide img {
+  width: 75px;
+  margin: auto;
+  }
+
+  .weapon-slide h5 {
+  font-size: 1.2rem;
+  }
+
+  .weapon-slide p {
+  font-size: 1rem;
+  }
+
+  .copyright a {
+    font-size: .7rem;
+  }
+
+  .copyright .cvc {
+    font-size: .7rem;
+  }
+}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+
+}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+
+}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+
+}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+}
