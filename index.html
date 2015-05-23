@@ -23,10 +23,10 @@
 		<div class="container" style="position:relative">
 			<div class="u-max-full-width header">
 				<div class="row">
-					<div class="two columns">
-						<img src="images/voidclash.svg" width="125">
+					<div class="two columns logo">
+						<img src="images/voidclash.svg" alt="Void Clash">
 					</div>
-					<div class="five columns">
+					<div class="five columns nv">
 						<nav class="navbar">
 							<ul class="navbar-list">
 								<li class="navbar-item"><a class="navbar-link" href="#" translate="nav.news"></a></li>
@@ -40,16 +40,16 @@
 						<a href="https://www.facebook.com/voidclash"><button class="button fb">F</button></a>
 						<a href="https://twitter.com/voidclash" target="_blank"><button class="button tw">T</button></a>
 						<a href="https://www.youtube.com/channel/UC961h0-47wv4ndkU8HwRARA" target="_blank"><button class="button yt">Y</button></a>
-						<nav class="navitup">
+						<div class="navitup">
 							<ul clas="navbar-list">
-								<li class="navbar-item"><a class="navbar-link" href="#"><img ng-src="images/{{lang.value == 'en' ? 'english' : 'france'}}.png" alt="" width="20"> {{lang.value == 'en' ? 'en' : 'fr'}}</a>
+								<li class="navbar-item"><a class="navbar-link" href="#"><img ng-src="images/{{lang.value == 'en' ? 'english' : 'france'}}.png" alt="" width="20"></a>
 									<ul>
 										<li class="navbar-item"><a class="navbar-link" href ng-click="lang.set('fr')" translate="lang.fr"></a></li>
 										<li class="navbar-item"><a class="navbar-link" href ng-click="lang.set('en')" translate="lang.en"></a></li>
 									</ul>
 								</li>
 							</ul>
-						</nav>
+						</div>
 					</div>
 				</div><!-- END ROW -->
 			</div><!-- END HEADER -->

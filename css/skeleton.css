@@ -418,6 +418,10 @@ hr {
   position:absolute;
 }
 
+.logo img {
+  width: 125px;
+}
+
 .navbar {
     padding-top: 10px;
     display: block;
@@ -780,6 +784,38 @@ there.
   font-size: 1rem;
   text-align: justify;
   }
+
+  .logo {
+    display: none;
+  }
+
+  .fb, .tw, .yt {
+    display: none;
+  }
+
+  .five.columns.nv, .five.columns.socials {
+    width: auto;
+  }
+
+  .navitup {
+  position: relative;
+  margin: auto;
+}
+
+  .navbar-link {
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .15rem;
+  margin-right: 10px;
+  text-decoration: none;
+  line-height: 4.5rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+  font-size: .8rem
+}
 
   .intro p {
     text-align: center;
