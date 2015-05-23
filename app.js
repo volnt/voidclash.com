@@ -84,6 +84,22 @@ app.config(function ($translateProvider) {
       horde: {
         title: "Horde",
         description: "Like in the FFA mod, you are alone except this time, tones of spacecrafts are comming by wave to erradicate your life ! When you die in this mod, your respawn will be the next round. <strong>You can active this mod in every others mod !</strong>"
+      },
+      koth: {
+        title: "King Of The Hill",
+        description: "Everyone is fighting to occup a specific map zone and keep it safe from opponents attacks. The team who keep more longer the zone whitin the round time won !"
+      },
+      svr: {
+        title: "Survivor",
+        description: "Like in the FFA mod, you are fighting against others except if someone die, he will respawn at the next round. There will be only one left at the end !"
+      },
+      tdm: {
+        title: "Team Deathmatch",
+        description: "Probably the most known mod on the earth and in the void arena, the goal is the same : Kill and kill again until the round's end. Keep in mind that your score is made with your kill and death ratio !"
+      },
+      tsvr: {
+        title: "Team Survivor",
+        description: "Like in the FFA mod, you are fighting against the opponents team except if someone die, he will respawn at the next round. There will be only one left at the end !"
       }
     },
     weapon: {
@@ -137,13 +153,13 @@ app.config(function ($translateProvider) {
       game: "Jeu",
       news: "Actualités",
       community: "Communauté",
-      greenlight: "Greenlightez nous"
+      greenlight: "Greenlight"
     },
     headline: {
-      greenlight: "Rejoignez nous et aidez nous à être <strong>Greenlighté</strong> !",
+      greenlight: "Rejoignez nous et aidez nous à conquérir <strong>Greenlight</strong> !",
       competitive: "Un shoot'em up complètement <br><strong>fou</strong>, <strong>en ligne</strong> et <strong>compétitif</strong>.",
       user_friendly: "Une interface complète et <strong>intuitive</strong>.",
-      guns: "Un système d'arme <strong>badass</strong> !",
+      guns: "Découvrez le système d'arme totallement <strong>badass</strong> !",
     },
     news: {
       title: "<strong>Quoi de neuf ?</strong> "
@@ -178,46 +194,62 @@ app.config(function ($translateProvider) {
     },
     modes: {
       title: "<strong>Voleur</strong> ou <strong>serial killer</strong> ?",
-      description: "Roi de la galaxie, Tueur ou Voleur de drapeau, vous pourrez choisir quel mode est votre préféré.<br>Associé avec tous ces modes, vous pourrez activer le mode Horde pour rendre le jeu plus drôle (et plus dur) !",
+      description: "Roi de la galaxie, Tueur ou Voleur de drapeau, vous pourrez choisir quel mode est votre préféré. Associé avec tous ces modes, vous pourrez activer le mode Horde pour rendre le jeu plus drôle (et plus dur) !",
       ctf: {
         title: "Capture de drapeau",
-        description: "Vous vous battez dans une arène de vide avec votre équipe entière. Votre but est de voler et rapporter le drapeau ennemi dans la base de votre équipe."
+        description: "Vous vous battez dans une arène au coeur de l'espace avec votre équipe entière. Votre but est de voler et rapporter le drapeau ennemi votre base."
       },
       ffa: {
-        title: "Free For All",
-        description: "In the void arena, your are alone against others. You have to kill a maximum amount of player and protect yourself from others attack ! Don't forget the best score is calculated with the kill and death ratio."
+        title: "Libre",
+        description: "Vous êtes seul contre tous. Votre objectif est d'éliminer le maximum de vos adversaires tout en évitant de se faire tuer ! Votre score sera calculé en fonction de votre ratio joueurs tués et morts."
       },
       horde: {
         title: "Horde",
-        description: "Like in the FFA mod, you are alone except this time, tones of spacecrafts are comming by wave to erradicate your life ! When you die in this mod, your respawn will be the next round. <strong>You can active this mod in every others mod !</strong>"
+        description: "Similaire au mode libre, vous êtes seul contre tous. Seulement cette fois-ci, des hordes de vaisseaux arrivent pour tenter de vous réduire à néant. Attention si vous mourrez, vous ré-apparaitrez au prochain round. <strong>Vous pouvez activer le mode horde dans n'importe quel autre type de partie !</strong>"
+      },
+      koth: {
+        title: "King Of The Hill",
+        description: "Tout le monde combat avec son équipe pour occuper et conquérir une zone spéciale de l'arène. L'équipe qui tient cette zone le plus longtemps dans le temps imparti remporte la partie !"
+      },
+      svr: {
+        title: "Survivor",
+        description: "Similaire au mode libre, vous êtes seul contre tous. Seulement cette fois-ci, lorsque qu'un joueur meurt, il ré-apparait au round suivant. Il n'en restera qu'un !"
+      },
+      tdm: {
+        title: "Match à mort par équipe",
+        description: "Sûrement le mode favoris des joueurs acidus, ici le but est le même : Détruire, tuer encore et encore jusqu'à la fin du round ! Votre score sera calculé en fonction de votre ratio joueurs tués et morts."
+      },
+      tsvr: {
+        title: "Survivor en équipe",
+        description: "Vous êtes accompagné de votre équipe contre vos adversaires. Seulement cette fois-ci, lorsque qu'un joueur meurt, il ré-apparait au round suivant. Il n'en restera qu'un !"
       }
     },
     weapon: {
       title: "Un système d'arme <strong>badass</strong>",
       description: {
-        first: "⤷ <strong>Create your weapons</strong> and <strong>totally customize them</strong> with more than <em>ten parameters</em> !",
-        second: "⤷ Choose between <strong>six weapon categories</strong> including the totally <strong>crazy <u>Engine</u> weapon</strong> !"
+        first: "⤷ <strong>Creez vos armes</strong> et <strong>customisez-les de a à z</strong> avec plus d'une <em>dizaine</em> de paramètres!",
+        second: "⤷ Vous avez le choix parmis <strong>six catégories d'armes</strong> dont l'incroyable <strong>arme <u>moteur</u></strong> !"
       },
-      subtitle: "<strong>Which kind of killer are you ?</strong>",
+      subtitle: "<strong>Quel genre de dégénéré êtes-vous ?</strong>",
       bomb: {
-        title: "Bomb",
-        description: "Someone wants to destroy an entire fleet ? <br>By optimising some other parameters, you will be able to strike in the opponent base !"
+        title: "Bombe",
+        description: "Une envie de décimer une flotte entre ? <br>En optimisant ses paramètres, vous pourrez frapper au coeur de la base ennemie !"
       },
       bullet: {
-        title: "Bullet",
-        description: "It represent all kind of weapons you can use to harass your enemy.<br>A machine gun or a sniper can be your friends to win."
+        title: "Balle",
+        description: "L'expression feu nourris prend tout son sens avec ces armes !<br> Sniper ou simple mitraillette seront vos alliés dans la victoire."
       },
       engine: {
-        title: "Engine",
-        description: "Engine weapons are your peace-keeper !<br> They allow you to absorb enemy shots, regenere life and give you more speed."
+        title: "Moteur",
+        description: "Les moteurs sont vos anges gardiens !<br> Ils vous permettent d'absorber des dégats, régénerer de la vie ou même vous donner de la vitesse."
       },
       rocket: {
         title: "Rocket",
-        description: "What could be better than a missile to disperse your opponent's remains in the void ? <br><br>Where you run it, it will explode !"
+        description: "Quoi de mieux qu'un missile pour disperser votre adversaire dans l'espace ? <br>Là où vous l'enverrez, elle explosera !"
       },
       turret: {
-        title: "Turret",
-        description: "Turrets are redoubtable for your enemy !<br>It targets and locks your enemy's position and then fire them when it is possible."
+        title: "Tourelle",
+        description: "Les tourelles sont redoubtable !<br>Elle cible et verrouille vos ennemis afin de les pulvériser dès qu'ils entre dans leurs champs d'action !"
       },
       zone: {
         title: "Zone",
@@ -233,5 +265,5 @@ app.config(function ($translateProvider) {
     }
   });
 
-  $translateProvider.preferredLanguage('en');
+  $translateProvider.preferredLanguage('fr');
 });

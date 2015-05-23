@@ -688,6 +688,7 @@ hr {
 
 .greenlight img {
   margin: 50px auto;
+  width: 70%
 }
 
 .partners {
@@ -705,6 +706,11 @@ hr {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.partners img {
+    width: 150px;
+    height: 86;
 }
 
 .navitup {
@@ -785,6 +791,10 @@ there.
   text-align: justify;
   }
 
+  .header {
+    width: 90%
+  }
+
   .logo {
     display: none;
   }
@@ -852,6 +862,15 @@ there.
     text-align: left;
   }
 
+.container.greenlight {
+  height: 75px;
+}
+
+.greenlight img {
+  margin: 25px auto;
+  width: 90%
+}
+
   .weapon-first, .weapon-second {
   text-align: center;
   font-size: 1.2rem
@@ -876,6 +895,22 @@ there.
 
   .copyright .cvc {
     font-size: .7rem;
+  }
+
+  .partners img {
+    width: 75px;
+    height: 43px;
+  }
+  .copyright a {
+    margin-left: 5px;
+  }
+
+  .copyright .columns {
+    width: auto;
+  }
+
+  .copyright .two {
+    float: right;
   }
 }
 
