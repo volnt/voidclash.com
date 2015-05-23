@@ -265,5 +265,5 @@ app.config(function ($translateProvider) {
     }
   });
 
-  $translateProvider.preferredLanguage('fr');
+  $translateProvider.preferredLanguage('en');
 });
