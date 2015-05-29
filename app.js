@@ -21,28 +21,6 @@ app.controller("IndexCtrl", function($scope, $http, $translate) {
   };
 });
 
-app.controller('NewsCtrl', function($scope, $http) {   
-        $http.get('"http://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=440&count=4&maxlength=150&format=json"')
-           .success(function(response, status, headers, config){
-
-              window.alert('came in');
-              if(status==200){
-
-                 $scope.news = response.News;
-                 window.alert($scope.news );
-
-              } else {
-                 window.alert('No internet Connection');
-              }
-              console.log($scope.news);
-           })
-          .error(function(data,status,headers,config){
-              window.alert('error '+data+status);
-              console.log(data);
-              console.log(status);
-         });
-})
-
 app.config(function ($translateProvider) {
   $translateProvider.translations('en', {
     lang: {
