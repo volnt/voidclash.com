@@ -40,7 +40,7 @@ app.config(function ($translateProvider) {
       guns: "A <strong>badass</strong>, gun system !"
     },
     news: {
-      title: "<strong>Last News</strong> on the blog"
+      title: "<strong>Discover</strong> the game"
     },
     concept: {
       title: "<strong>the game</strong> overview",
@@ -162,7 +162,7 @@ app.config(function ($translateProvider) {
       guns: "Découvrez le système d'arme totallement <strong>badass</strong> !",
     },
     news: {
-      title: "<strong>Quoi de neuf ?</strong> "
+      title: "<strong>Découvrez</strong> le jeu"
     },
     concept: {
       title: "<strong>Le jeu</strong> en aperçu",

@@ -28,6 +28,16 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script type="text/javascript">
+	$('a[href^="#"]').on('click', function(event) {
+    var target = $(this.href);
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+});</script>
 </head>
 
 <body ng-controller="IndexCtrl">
@@ -154,38 +164,25 @@
 			<div class="row">
 				<h2 class="uppercase" translate="news.title"></h2>
 			</div>
-			<div class="row">
-				<div class="three columns">
-					<h5>Introducing the last update</h5>
-					<img src="http://placehold.it/250x250" width="100%">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua.
-					</p>
-					<p style="text-align:right"><a href="#">Read more →</a></p>
+			<div class="row cnt">
+				<div class="eight columns">
+					<div>
+						<img src="http://placehold.it/530x250" width="100%" height="100%" />
+					</div>
 				</div>
-				<div class="three columns">
-					<h5>Introducing the last update</h5>
-					<img src="http://placehold.it/250x250" width="100%" />
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua.
-					</p>
-					<p style="text-align:right"><a href="#">Read more →</a></p>
+				<div class="four columns">
+					<img src="http://placehold.it/250x250" width="100%" height="100%" />
 				</div>
-				<div class="three columns">
-					<h5>Introducing the last update</h5>
-					<img src="http://placehold.it/250x250" width="100%" />
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua.
-					</p>
-					<p style="text-align:right"><a href="#">Read more →</a></p>
+			</div>
+			<div class="row mt3p">
+				<div class="four columns">
+					<img src="http://placehold.it/250x250" width="100%" height="100%">
 				</div>
-				<div class="three columns">
-					<h5>Introducing the last update</h5>
-					<img src="http://placehold.it/250x250" width="100%" />
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua.
-					</p>
-					<p style="text-align:right"><a href="#">Read more →</a></p>
+				<div class="four columns">
+					<img src="http://placehold.it/250x250" width="100%" height="100%" />
+				</div>
+				<div class="four columns">
+					<img src="http://placehold.it/250x250" width="100%" height="100%" />
 				</div>
 			</div>
 		</div>
@@ -460,7 +457,6 @@
 			</div>
 		</div>
 	</div>
-
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.7.0/angular-translate.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>

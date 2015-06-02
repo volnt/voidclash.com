@@ -523,6 +523,30 @@ hr {
   padding: 6rem 0;
 }
 
+.discover div {
+  -moz-background-size:100% 100%;
+  -webkit-background-size:100% 100%;
+  background-size:100% 100%;
+}
+
+.discover div div {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.discover h4 {
+  position: absolute;
+  top:  50%;
+  margin: 0 auto;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.mt3p {
+  margin-top: 3%;
+}
+
 .game-concept {
   background: rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 1);
