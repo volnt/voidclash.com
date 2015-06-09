@@ -29,15 +29,14 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script type="text/javascript">
-	$('a[href^="#"]').on('click', function(event) {
-    var target = $(this.href);
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: target.offset().top
-        }, 1000);
-    }
-});</script>
+	jQuery(document).ready(function($) {
+ 
+	$(".scroll").click(function(event){		
+		event.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+		});
+	});
+	</script>
 </head>
 
 <body ng-controller="IndexCtrl">
@@ -51,9 +50,8 @@
 					<div class="five columns nv">
 						<nav class="navbar">
 							<ul class="navbar-list">
-								<li class="navbar-item"><a class="navbar-link" href="#news" translate="nav.news"></a></li>
-								<li class="navbar-item"><a class="navbar-link" href="#game" translate="nav.game"></a></li>
-								<li class="navbar-item"><a class="navbar-link" href="#community" translate="nav.community"></a></li>
+								<li class="navbar-item"><a href="#news" class="navbar-link scroll" translate="nav.game"></a></li>
+								<li class="navbar-item"><a href="#community" class="navbar-link scroll" translate="nav.community"></a></li>
 							</ul>
 						</nav>
 					</div>

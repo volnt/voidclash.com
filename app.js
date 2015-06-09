@@ -28,8 +28,8 @@ app.config(function ($translateProvider) {
       en: "en",
     },
     nav: {
-      game: "Game",
-      news: "News",
+      game: "The Game",
+      news: "",
       community: "Community",
       greenlight: "Greenlit us"
     },
@@ -150,8 +150,8 @@ app.config(function ($translateProvider) {
       en: "en",
     },
     nav: {
-      game: "Jeu",
-      news: "Actualités",
+      game: "Le jeu",
+      news: "",
       community: "Communauté",
       greenlight: "Greenlight"
     },
