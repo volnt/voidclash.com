@@ -29,7 +29,7 @@ app.config(function ($translateProvider) {
     },
     nav: {
       game: "The Game",
-      news: "",
+      support: "Support",
       community: "Community",
       greenlight: "Greenlit us"
     },
@@ -140,8 +140,39 @@ app.config(function ($translateProvider) {
     footer: {
       lm : "Legal Mentions",
       pp: "Privacy Policy"
+    },
+    faq: {
+      title: "Even a <strong>space gangster</strong> may need help !",
+      description: {
+        first: "⤷ <strong>Create your weapons</strong> and <strong>totally customize them</strong> with more than <em>ten parameters</em> !",
+        second: "⤷ Choose between <strong>six weapon categories</strong> including the totally <strong>crazy <u>Engine</u> weapon</strong> !"
+      },
+      subtitle: "<strong>Which kind of killer are you ?</strong>",
+      bomb: {
+        title: "Bomb",
+        description: "Someone wants to destroy an entire fleet ? <br>By optimising some other parameters, you will be able to strike in the opponent base !"
+      },
+      bullet: {
+        title: "Bullet",
+        description: "It represent all kind of weapons you can use to harass your enemy.<br>A machine gun or a sniper can be your friends to win."
+      },
+      engine: {
+        title: "Engine",
+        description: "Engine weapons are your peace-keeper !<br> They allow you to absorb enemy shots, regenere life and give you more speed."
+      },
+      rocket: {
+        title: "Rocket",
+        description: "What could be better than a missile to disperse your opponent's remains in the void ? <br><br>Where you run it, it will explode !"
+      },
+      turret: {
+        title: "Turret",
+        description: "Turrets are redoubtable for your enemy !<br>It targets and locks your enemy's position and then fire them when it is possible."
+      },
+      zone: {
+        title: "Zone",
+        description: " Zone"
+      }
     }
-
   });
 
   $translateProvider.translations('fr', {
@@ -151,7 +182,7 @@ app.config(function ($translateProvider) {
     },
     nav: {
       game: "Le jeu",
-      news: "",
+      support: "Support",
       community: "Communauté",
       greenlight: "Greenlight"
     },
@@ -262,6 +293,38 @@ app.config(function ($translateProvider) {
     footer: {
       lm : "Mentions Légales",
       pp: "Confidentialité"
+    },
+    faq: {
+      title: "Même un <strong>bandit de l'espace</strong> peut avoir besoin d'aide !",
+      description: {
+        first: "⤷ <strong>Create your weapons</strong> and <strong>totally customize them</strong> with more than <em>ten parameters</em> !",
+        second: "⤷ Choose between <strong>six weapon categories</strong> including the totally <strong>crazy <u>Engine</u> weapon</strong> !"
+      },
+      subtitle: "<strong>Which kind of killer are you ?</strong>",
+      bomb: {
+        title: "Bomb",
+        description: "Someone wants to destroy an entire fleet ? <br>By optimising some other parameters, you will be able to strike in the opponent base !"
+      },
+      bullet: {
+        title: "Bullet",
+        description: "It represent all kind of weapons you can use to harass your enemy.<br>A machine gun or a sniper can be your friends to win."
+      },
+      engine: {
+        title: "Engine",
+        description: "Engine weapons are your peace-keeper !<br> They allow you to absorb enemy shots, regenere life and give you more speed."
+      },
+      rocket: {
+        title: "Rocket",
+        description: "What could be better than a missile to disperse your opponent's remains in the void ? <br><br>Where you run it, it will explode !"
+      },
+      turret: {
+        title: "Turret",
+        description: "Turrets are redoubtable for your enemy !<br>It targets and locks your enemy's position and then fire them when it is possible."
+      },
+      zone: {
+        title: "Zone",
+        description: " Zone"
+      }
     }
   });
 
