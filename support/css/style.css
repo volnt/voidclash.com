@@ -47,7 +47,7 @@ body.cd-overlay::after {
 }
 
 a {
-  color: rgba(160, 196, 35, 1);
+  color: #42464b;
   text-decoration: none;
 }
 
@@ -56,6 +56,43 @@ a {
 Main components 
 
 -------------------------------- */
+.navigation {
+  position: relative;
+  background: #42464b;
+  height:55px;
+}
+
+.navigation a {
+  color: #FFFFFF;
+  transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+}
+
+.navigation a:hover {
+  color: rgba(160, 196, 35, 1);
+}
+
+
+.navigation .container {
+  width: 90%;
+  max-width: 1024px;
+  margin: auto;
+  text-align: center;
+}
+
+.container .logo {
+  float: left;
+  clear: both;
+}
+
+.container .language {
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
 header {
   position: relative;
   height: 180px;
