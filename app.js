@@ -31,6 +31,7 @@ app.config(function ($translateProvider) {
       game: "The Game",
       support: "Support",
       community: "Community",
+      get: "<u>Try now!</u>",
       greenlight: "Greenlit us"
     },
     headline: {
@@ -322,6 +323,7 @@ $translateProvider.translations('fr', {
     game: "Le jeu",
     support: "Support",
     community: "Communauté",
+    get: "<u>Essayez la beta!</u>",
     greenlight: "Greenlight"
   },
   headline: {
