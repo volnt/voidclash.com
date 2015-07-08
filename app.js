@@ -148,19 +148,19 @@ app.config(function ($translateProvider) {
         title: "Basics",
         n1: {
           question: "What is Void Clash ?",
-          description: "answer"
+          description: "Void Clash is a fast-paced, online and competitive shoot'em up arena. It brings you an innovative gameplay mixing several concepts from the video game’s world. Controlling a spacecraft with a top view, you have to defeat your enemies during incredible arena fights. Void Clash is also giving you a full game element customization ! <br><br>Void Clash is released on the Steam Greenlight™ platform. You can reach the page by following the link here: <a href='#''>http://xxx.xx</a>"
         },
         n2: {
           question: "Void Clash's beta is available ?",
-          description: "answer"
+          description: "Yes, VoidClash's beta is now available for <strong>Windows</strong> and <strong>Linux</strong> platform. <br>You can try the beta for free by following the link: <a href='http://get.voidclash.com'>http://get.voidclash.com/</a> "
         },
         n3: {
           question: "How works Steam Greenlight&#8482; ?",
-          description: "answer"
+          description: "Steam Greenlight™ is a platform that allows active Steam users to vote on indie titles they wish to see showcased on its site. Once submitted, thousands of users will view and possibly vote or comment on the game."
         },
         n4: {
           question: "How can I help to get Void Clash greenlit ?",
-          description: "answer"
+          description: "If you like our work, you can help us in many ways: <br> - First, you can vote for Void Clash on Greenlight™ <br> - You can also bring us some feedbacks about the game <br> - Finally, you can share it with your friends."
         },
         n5: {
           question: "Which are the minimal requirements to play ?",
@@ -172,7 +172,7 @@ app.config(function ($translateProvider) {
         },
         n7: {
           question: "Which are the Void Clash game's components ?",
-          description: "answer"
+          description: "Void Clash is composed of 4 elements: <br> - The launcher <br> - The game client <br> - The map editor <br> - The sharing platform"
         },
         n8: {
           question: "How can I unistall Void Clash on my computer ?",
