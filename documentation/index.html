@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>VoidClash &#151; Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Ivor">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <style type="text/css">
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+</style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    </head>
+    
+<body data-spy="scroll" id="top">
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container"> 
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+	<a class="brand" href="#">Void Clash Documentation</a> <!-- TIP: Change this for the name of your file -->
+     	<div class="nav-collapse">
+        <ul class="nav">
+              <li><a href="#top" class="active">Top</a></li>
+              <li><a href="#file">File</a></li>
+              <li><a href="#game">Game</a></li>
+              <li><a href="#horde">Horde</a></li>
+              <li><a href="#player">Player</a></li>
+              <li><a href="#server">Server</a></li>
+              <li><a href="#weapon">Weapons</a></li>
+          </ul>
+</div>
+	</div>
+		</div>
+			</div> <!-- End of Navbar -->
+
+<!-- Main Container Beginning -->			
+<div class="container">
+	<div class="masthead">
+	    <h1>Void Clash Documentation</h1>
+	    
+	    <p>All the documentation allows you to customize the game as you want. <br>
+      Here it's all about the configuration file !</p>
+	</div> <!-- masthead -->
+	
+   <div id="intro">
+    <p class="highlight hero-unit">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="#">here</a>. Thanks so much!</p>
+  </div> <!-- intro -->
+
+
+<section id="file">
+    <div class="page-header">
+       <h1>Configuration File <small>customization and highlights</small></h1>
+     </div>
+
+ <div class="alert alert-info"> <b>Heads up!</b> Here are defined all elements needed by the server to run properly. Anyway, you can change the order of the element and add more configuration in the file ! </div>
+
+
+    <hr />
+  <div class="row">
+  <div class="span3">
+     <h3>Configuration File structure</h3>
+     <p>The configuration file is designed following the json data structuration. Its name is <strong><em>config.json</em></strong></p>
+  </div>
+<div class="span9">
+<h5>Example:</h5>
+<pre class="prettyprint linenums">
+{
+    "config": "Basic",
+      "game": {},
+      "horde": {},
+      "player": {},
+      "server": {},
+      "weapons": {}
+}
+</pre>
+      </div>
+    </div>
+</section>
+
+
+<section id="game">
+    <div class="page-header">
+       <h1>Game configuration</h1>
+     </div>
+
+  <div class="row">
+  <div class="span3">
+     <h3>Configuration File structure</h3>
+     <p>The configuration file is designed following the json data structuration. Its name is <strong><em>config.json</em></strong></p>
+  </div>
+<div class="span9">
+<h5>Example:</h5>
+<pre class="prettyprint linenums">
+"game": {
+    "friendly_fire_own": 0,
+    "friendly_fire_team": 0,
+    "round_nb": 15,
+    "speed": 20,
+    "zoom": 1.6,
+    "map": "square.json",
+    "map_duration": 40,
+    "mode": "CTF",
+    "warmup_duration": 10
+}
+</pre>
+      </div>
+</div>
+<hr>
+  <div class="row">
+  <div class="span3">
+     <h3>Attributes overview</h3>
+     <p></p>
+  </div>
+      <div class="span9">
+        <pre style="prettyprint linenums">
+  int         speed;
+  float       zoom;
+  int         friendly_fire_own;
+  int         friendly_fire_team;
+  int         round_nb;
+  std::string map;
+  int         map_duration;
+  std::string mode;
+  int         warmup_duration;
+        </pre>
+      </div>
+    </div>
+
+    <hr />
+
+<div class="row">
+    <div class="span3">
+  <h3>Game attributes</h3>
+  <p>Throught this table, you can find all the weapon parameters that you can use in your configuration file.</p>
+  <br>
+  <p>
+    <strong>boolean</strong>: <code>true</code> or <code>false</code><br><br>
+    <strong>int</strong>: (integer) from <code>-2 147 483 648</code> to <br><code>2 147 483 647</code><br><br>
+    <strong>float</strong>: (real) from <code>-3.4*10^-38</code> to <code>3.4*1038</code><br><br>
+    <strong>string</strong>:  sequence of characters
+  </p>
+</div>
+<div class="span9">
+        <table class="table table-bordered table-striped">
+              <thead>
+            <tr>
+                  <th>Attr Name</th>
+                  <th>Type</th>
+                  <th>Description</th>
+                </tr>
+          </thead>
+              <tbody>
+            <tr>
+                  <td><code>speed</code></td>
+                  <td>int</td>
+                  <td></td>
+                </tr>
+            <tr>
+                  <td><code>zoom</code></td>
+                  <td>float</td>
+                  <td></td>
+            </tr>
+            <tr>
+                  <td><code>friendly_fire_own</code></td>
+                  <td>int</td>
+                  <td></td>
+            </tr>
+            <tr>
+              <td><code>friendly_fire_team</code></td>
+              <td>int</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><code>round_nb</code></td>
+              <td>int</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><code>map</code></td>
+              <td>string</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><code>map_duration</code></td>
+              <td>int</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><code>mode</code></td>
+              <td>string</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><code>warmup_duration</code></td>
+              <td>int</td>
+              <td></td>
+            </tr>
+          </tbody>
+            </table>
+      </div>
+        </div>
+</section>
+
+
+<section id="horde">
+    <div class="page-header">
+       <h1>Horde configuration</h1>
+     </div>
+
+  <div class="row">
+  <div class="span3">
+     <h3>Configuration File structure</h3>
+     <p>The configuration file is designed following the json data structuration. Its name is <strong><em>config.json</em></strong></p>
+  </div>
+<div class="span9">
+<h5>Example:</h5>
+<pre class="prettyprint linenums">
+   "horde": {
+        "acceleration": 45,
+        "damage": 300,
+        "depop_time": 30,
+        "life": 100,
+        "respawn_time": 0.5,
+        "size": 30,
+        "spawn_range": 1000,
+        "speed": 500
+    }
+</pre>
+      </div>
+</div>
+<hr>
+  <div class="row">
+  <div class="span3">
+     <h3>Attributes overview</h3>
+     <p></p>
+  </div>
+      <div class="span9">
+        <pre style="prettyprint linenums">
+  float respawnTime;
+  float depopTime;
+  int   speed;
+  int   life;
+  int   size;
+  int   spawn_range;
+  int   damage;
+  int   acceleration;
+        </pre>
+      </div>
+    </div>
+
+    <hr />
+
+<div class="row">
+    <div class="span3">
+  <h3>Horde attributes</h3>
+  <p>Throught this table, you can find all the horde parameters that you can use in your configuration file.</p>
+  <br>
+  <p>
+    <strong>boolean</strong>: <code>true</code> or <code>false</code><br><br>
+    <strong>int</strong>: (integer) from <code>-2 147 483 648</code> to <br><code>2 147 483 647</code><br><br>
+    <strong>float</strong>: (real) from <code>-3.4*10^-38</code> to <code>3.4*1038</code><br><br>
+    <strong>string</strong>:  sequence of characters
+  </p>
+</div>
+<div class="span9">
+        <table class="table table-bordered table-striped">
+              <thead>
+            <tr>
+                  <th>Attr Name</th>
+                  <th>Type</th>
+                  <th>Description</th>
+                </tr>
+          </thead>
+              <tbody>
+            <tr>
+                  <td><code>respawnTime</code></td>
+                  <td>float</td>
+                  <td></td>
+                </tr>
+            <tr>
+                  <td><code>depopTime</code></td>
+                  <td>float</td>
+                  <td></td>
+            </tr>
+            <tr>
+                  <td><code>speed</code></td>
+                  <td>int</td>
+                  <td></td>
+            </tr>
+            <tr>
+              <td><code>life</code></td>
+              <td>int</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><code>size</code></td>
+              <td>int</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><code>spawn_range</code></td>
+              <td>int</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><code>damage</code></td>
+              <td>int</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><code>acceleration</code></td>
+              <td>int</td>
+              <td></td>
+            </tr>
+          </tbody>
+            </table>
+      </div>
+        </div>
+</section>
+
+<section id="player">
+    <div class="page-header">
+       <h1>Player configuration</h1>
+     </div>
+
+  <div class="row">
+  <div class="span3">
+     <h3>Configuration File structure</h3>
+     <p>The configuration file is designed following the json data structuration. Its name is <strong><em>config.json</em></strong></p>
+  </div>
+<div class="span9">
+<h5>Example:</h5>
+<pre class="prettyprint linenums">
+    "player": {
+        "acceleration": 100,
+        "friction": 16,
+        "invulnerable_time": 3,
+        "life": 1000,
+        "max_energy": 1500,
+        "max_speed": 750,
+        "regen_energy": 4,
+        "size": 100,
+        "velocity_factor": 0
+    }
+</pre>
+      </div>
+</div>
+<hr>
+  <div class="row">
+  <div class="span3">
+     <h3>Attributes overview</h3>
+     <p></p>
+  </div>
+      <div class="span9">
+        <pre style="prettyprint linenums">
+  int     acceleration;
+  int     max_speed;
+  float   friction;
+  int     size;
+  float   velocity;
+  int     max_energy;
+  int     regen_energy;
+  int     life;
+  float   regen_life;
+  int     speed_cap;
+  float   invulnerable_time;  // in sec
+        </pre>
+      </div>
+    </div>
+
+    <hr />
+
+<div class="row">
+    <div class="span3">
+  <h3>Player attributes</h3>
+  <p>Throught this table, you can find all the player parameters that you can use in your configuration file.</p>
+  <br>
+  <p>
+    <strong>boolean</strong>: <code>true</code> or <code>false</code><br><br>
+    <strong>int</strong>: (integer) from <code>-2 147 483 648</code> to <br><code>2 147 483 647</code><br><br>
+    <strong>float</strong>: (real) from <code>-3.4*10^-38</code> to <code>3.4*1038</code><br><br>
+    <strong>string</strong>:  sequence of characters
+  </p>
+</div>
+<div class="span9">
+        <table class="table table-bordered table-striped">
+              <thead>
+            <tr>
+                  <th>Attr Name</th>
+                  <th>Type</th>
+                  <th>Description</th>
+                </tr>
+          </thead>
+              <tbody>
+            <tr>
+                  <td><code>acceleration</code></td>
+                  <td>int</td>
+                  <td></td>
+                </tr>
+            <tr>
+                  <td><code>max_speed</code></td>
+                  <td>int</td>
+                  <td></td>
+            </tr>
+            <tr>
+                  <td><code>friction</code></td>
+                  <td>float</td>
+                  <td></td>
+            </tr>
+            <tr>
+              <td><code>size</code></td>
+              <td>int</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><code>velocity</code></td>
+              <td>float</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><code>max_energy</code></td>
+              <td>int</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><code>regen_energy</code></td>
+              <td>int</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><code>life</code></td>
+              <td>int</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><code>regen_life</code></td>
+              <td>float</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><code>speed_cap</code></td>
+              <td>int</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><code>invulnerable_time</code></td>
+              <td>float</td>
+              <td>in second</td>
+            </tr>
+          </tbody>
+            </table>
+      </div>
+        </div>
+</section>
+
+<section id="server">
+    <div class="page-header">
+       <h1>Server configuration</h1>
+     </div>
+
+  <div class="row">
+  <div class="span3">
+     <h3>Configuration File structure</h3>
+     <p>The configuration file is designed following the json data structuration. Its name is <strong><em>config.json</em></strong></p>
+  </div>
+<div class="span9">
+<h5>Example:</h5>
+<pre class="prettyprint linenums">
+   "server": {
+        "max_player": 16,
+        "name": "Official EU serv 1 (Irlande)",
+        "password": "HEY",
+        "tickrate": 128
+    }
+</pre>
+      </div>
+</div>
+<hr>
+  <div class="row">
+  <div class="span3">
+     <h3>Attributes overview</h3>
+     <p></p>
+  </div>
+      <div class="span9">
+        <pre style="prettyprint linenums">
+  std::string name;
+  std::string password;
+  int     tickrate;
+  int     max_player;
+        </pre>
+      </div>
+    </div>
+
+    <hr />
+
+<div class="row">
+    <div class="span3">
+  <h3>Server attributes</h3>
+  <p>Throught this table, you can find all the server parameters that you can use in your configuration file.</p>
+  <br>
+  <p>
+    <strong>boolean</strong>: <code>true</code> or <code>false</code><br><br>
+    <strong>int</strong>: (integer) from <code>-2 147 483 648</code> to <br><code>2 147 483 647</code><br><br>
+    <strong>float</strong>: (real) from <code>-3.4*10^-38</code> to <code>3.4*1038</code><br><br>
+    <strong>string</strong>:  sequence of characters
+  </p>
+</div>
+<div class="span9">
+        <table class="table table-bordered table-striped">
+              <thead>
+            <tr>
+                  <th>Attr Name</th>
+                  <th>Type</th>
+                  <th>Description</th>
+                </tr>
+          </thead>
+              <tbody>
+            <tr>
+                  <td><code>name</code></td>
+                  <td>string</td>
+                  <td></td>
+                </tr>
+            <tr>
+                  <td><code>password</code></td>
+                  <td>string</td>
+                  <td></td>
+            </tr>
+            <tr>
+                  <td><code>tickrate</code></td>
+                  <td>int</td>
+                  <td></td>
+            </tr>
+            <tr>
+              <td><code>max_player</code></td>
+              <td>int</td>
+              <td></td>
+            </tr>
+          </tbody>
+            </table>
+      </div>
+        </div>
+</section>
+
+<section id="weapon">
+	<div class="page-header">
+	  <h1>Weapons</h1>
+	</div>
+
+    <hr />
+
+    <div class="row">
+      <div class="span3">
+        <h3>General Weapon structure</h3>
+        <p>An example of a weapon in the <strong><em>config.json</em></strong> configuration file.</p>
+      </div>
+
+<div class="span9">
+<h5>Basic weapon:</h5>
+<pre class="prettyprint linenums">
+  "weapons": {
+       "G_Example": {
+            "category": "GRAVITY",
+            "speed": 0,
+            "size": 500,
+            "bounce": 1,
+            "duration": 2,
+            "fire_rate": 0.8,
+            "energy_cost": 200,
+            "pushback_fire": 0,
+            "pushback_other": 0,
+            "damage": 200,
+            "slow": 80,
+            "collide_walls":  false
+        }
+    }
+</pre>
+
+<h5>Composed weapon:</h5>
+<pre class="prettyprint linenums">
+  "weapons": {
+       "G_Example": {
+            "category": "GRAVITY",
+            "speed": 0,
+            "size": 500,
+            "bounce": 1,
+            "duration": 2,
+            "fire_rate": 0.8,
+            "energy_cost": 200,
+            "pushback_fire": 0,
+            "pushback_other": 0,
+            "damage": 200,
+            "slow": 80,
+            "collide_walls":  false
+        }
+
+        "T_Shotgun": {
+            "capacity": 1,
+            "category": "TURRET",
+            "detection_range": 1000,
+            "duration": 5,
+            "energy_cost": 700,
+            "fire_rate": 1,
+            "life": 1000,
+            "size": 30,
+            "speed": 0,
+            "sub_weapon": "G_Example"
+        }
+      }
+</pre>
+      </div>
+        </div>
+
+    <hr />
+
+<div class="row">
+    <div class="span3">
+  <h3>Attributes overview</h3>
+  <p></p>
+</div>
+
+<div class="span9">
+<pre class="prettyprint linenums">
+  std::string   name;         // Name of the weapon
+  std::string   category;     // Category of the weapon (ie. Bullet / Rocket...)
+  int     energy_cost;        // All - Energy cost of the weapon
+  int     init_energy_cost;   // Shield - Value of the drain energy when activating shield on the first frame
+  int     damage;             // Bullet / Bomb / Rocket / Gravity - Damage
+  int     speed;              // All - Velocity
+  float   duration;           // All - Duration
+  float   fire_rate;          // All - Firerate of the weapon
+  int     size;               // All - Size of the projectile
+  int     size_explosion;     // Rocket / Bomb - Size of the explosion
+  int     pushback_fire;      // All - Pushback power on player when he fires
+  int     pushback_other;     // All - Pushback power on other player when they get hit
+  int     acceleration;       // Bomb / Shield - Give a speed boost
+  int     chain;              // Bomb / Rocket - Is triggered when in range of another explosion
+  int     drain_energy;       // All - Value of the drain energy when an enemy is hit
+  int     shot_nb;            // Bullet - Nb of shots (ie. Shotgun)
+  int     angle;              // Bullet - Spread angle of shots (ie. Shotgun)
+  bool    collide_walls;      // All - true to enable collision with walls
+  int     bounce;             // All - bounce agaisn't walls
+  int     detection_range;    // Turret - Range of detection
+  int     life;               // Turret - Turret life // 0 = immortal
+  int     capacity;           // Turret - Nb of elements
+  int     slow;               // Bullet / Bomb / Rocket / Gravity - Power of slow in percent (0 - 100)
+  int     slow_duration;      // Bullet / Bomb / Rocket - Duration of slow
+
+  struct s_weapon   *subWeapon;   // If a weapon has a subweapon (ie. Turret)
+  std::string   subWeaponName;    // Just used for parsing
+
+  int     getWeaponIndex();
+</pre>
+      </div>
+        </div>
+
+<hr />
+
+<div class="row">
+    <div class="span3">
+  <h3>Weapon attributes</h3>
+  <p>Throught this table, you can find all the weapon parameters that you can use in your configuration file.</p>
+  <br>
+  <p>
+    <strong>boolean</strong>: <code>true</code> or <code>false</code><br><br>
+    <strong>int</strong>: (integer) from <code>-2 147 483 648</code> to <br><code>2 147 483 647</code><br><br>
+    <strong>float</strong>: (real) from <code>-3.4*10^-38</code> to <code>3.4*1038</code><br><br>
+    <strong>string</strong>:  sequence of characters
+  </p>
+</div>
+<div class="span9">
+        <table class="table table-bordered table-striped">
+              <thead>
+            <tr>
+                  <th>Attr Name</th>
+                  <th>Type</th>
+                  <th>Weapon</th>
+                  <th>Description</th>
+                </tr>
+          </thead>
+              <tbody>
+            <tr>
+                  <td><code>name</code></td>
+                  <td>string</td>
+                  <td>All</td>
+                  <td>ie. G_Gravity</td>
+                </tr>
+            <tr>
+                  <td><code>category</code></td>
+                  <td>Bullet<br>
+                      Bomb<br>
+                      Rocket<br>
+                      Turret<br>
+                      Gravity
+                  </td>
+                  <td>All</td>
+                  <td>Use uppercase to identify. ie. GRAVITY</td>
+                </tr>
+            <tr>
+                  <td><code>energy_cost</code></td>
+                  <td>int</td>
+                  <td>All</td>
+                  <td>Energy cost of the weapon</td>
+                </tr>
+            <tr>
+              <td><code>init_energy_cost</code></td>
+              <td>int</td>
+              <td>Shield</td>
+              <td>Value of the drain energy when activating shield on the first frame</td>
+            </tr>
+            <tr>
+              <td><code>Damage</code></td>
+              <td>Bullet<br>
+                Bomb<br>
+                Rocket<br>
+                Gravity
+              </td>
+              <td>Bullet<br>
+                Bomb<br>
+                Rocket<br>
+                Gravity
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><code>speed</code></td>
+              <td>int</td>
+              <td>All</td>
+              <td>Velocity</td>
+            </tr>
+            <tr>
+              <td><code>duration</code></td>
+              <td>float</td>
+              <td>All</td>
+              <td>Duration</td>
+            </tr>
+            <tr>
+              <td><code>fire_rate</code></td>
+              <td>float</td>
+              <td>All</td>
+              <td>Firerate of the weapon</td>
+            </tr>
+            <tr>
+              <td><code>size</code></td>
+              <td>int</td>
+              <td>All</td>
+              <td>Size of the projectile</td>
+            </tr>
+            <tr>
+              <td><code>size_explosion</code></td>
+              <td>int</td>
+              <td>Rocket<br>
+              Bomb
+              </td>
+              <td>Size of the explosion</td>
+            </tr>
+            <tr>
+              <td><code>pushback_fire</code></td>
+              <td>int</td>
+              <td>All</td>
+              <td>Pushback power on player when he fires</td>
+            </tr>
+            <tr>
+              <td><code>pushback_other</code></td>
+              <td>int</td>
+              <td>All</td>
+              <td>Pushback power on other player when they get hit</td>
+            </tr>
+            <tr>
+              <td><code>acceleration</code></td>
+              <td>int</td>
+              <td>Bomb<br>
+              Shield
+              </td>
+              <td>Give a speed boost</td>
+            </tr>
+            <tr>
+              <td><code>chain</code></td>
+              <td>int</td>
+              <td>Bomb<br>
+              Shield
+              </td>
+              <td>Is triggered when in range of another explosion</td>
+            </tr>
+            <tr>
+              <td><code>drain_energy</code></td>
+              <td>int</td>
+              <td>All</td>
+              <td>Value of the drain energy when an enemy is hit</td>
+            </tr>
+            <tr>
+              <td><code>shot_nb</code></td>
+              <td>int</td>
+              <td>Bullet</td>
+              <td>Nb of shots (ie. Shotgun)</td>
+            </tr>
+            <tr>
+              <td><code>angle</code></td>
+              <td>int</td>
+              <td>Bullet</td>
+              <td>Spread angle of shots (ie. Shotgun)</td>
+            </tr>
+            <tr>
+              <td><code>collide_walls</code></td>
+              <td>boolean</td>
+              <td>All</td>
+              <td>true to enable collision with walls</td>
+            </tr>
+            <tr>
+              <td><code>bounce</code></td>
+              <td>int</td>
+              <td>All</td>
+              <td>bounce agaisnt walls</td>
+            </tr>
+            <tr>
+              <td><code>detection_range</code></td>
+              <td>int</td>
+              <td>Turret</td>
+              <td>Range of detection</td>
+            </tr>
+            <tr>
+              <td><code>life</code></td>
+              <td>int</td>
+              <td>Turret</td>
+              <td>Turret life // 0 = immortal</td>
+            </tr>
+            <tr>
+              <td><code>capacity</code></td>
+              <td>int</td>
+              <td>Turret</td>
+              <td>Numbers of elements</td>
+            </tr>
+            <tr>
+              <td><code>slow</code></td>
+              <td>int (0 - 100)</td>
+              <td>Bullet<br>
+                  Bomb<br>
+                  Rocket<br>
+                  Gravity
+              </td>
+              <td>Power of slow in percent (0 - 100)</td>
+            </tr>
+            <tr>
+              <td><code>slow_duration</code></td>
+              <td>int</td>
+              <td>Bullet<br>
+                  Bomb<br>
+                  Rocket
+              </td>
+              <td>Duration of slow</td>
+            </tr>
+          </tbody>
+            </table>
+      </div>
+        </div>
+</section> <!-- Weapon -->
+      
+
+ 
+      <hr />
+
+<div class="goodbye">
+    <p>Thanks everyone for your support ! Keep in mind that we are on Greenlight to go further with this game. If you want to bring us some feedbacks about everything, don't hesitate to contact us on facebook, twitter, steam or email !</p>
+  </div>
+
+      <hr />
+
+<footer>
+    <p>&copy; Void Clash 2015</p>
+</footer>
+
+</div><!-- /container --> 
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="assets/js/jquery.js"></script> 
+<script src="assets/js/scripts.js"></script> 
+<script src="assets/js/google-code-prettify/prettify.js"></script> 
+<script src="assets/js/bootstrap-transition.js"></script> 
+<script src="assets/js/bootstrap-alert.js"></script> 
+<script src="assets/js/bootstrap-modal.js"></script> 
+<script src="assets/js/bootstrap-dropdown.js"></script> 
+<script src="assets/js/bootstrap-scrollspy.js"></script> 
+<script src="assets/js/bootstrap-tab.js"></script> 
+<script src="assets/js/bootstrap-tooltip.js"></script> 
+<script src="assets/js/bootstrap-popover.js"></script> 
+<script src="assets/js/bootstrap-button.js"></script> 
+<script src="assets/js/bootstrap-collapse.js"></script>
+</body>
+</html>
