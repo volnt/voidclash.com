@@ -168,15 +168,15 @@ app.config(function ($translateProvider) {
         },
         n6: {
           question: "How can I install Void Clash on my computer ?",
-          description: "answer"
+          description: "Once you get Void Clash from our download platform, depending on your operating system, you can process the following procedure : <br><br> On Windows, Go into your download folder or where you put the downloaded Void Clash installer. Then execute 'Install Void Clash.msi' and follow the setup instructions."
         },
         n7: {
           question: "Which are the Void Clash game's components ?",
-          description: "Void Clash is composed of 4 elements: <br> - The launcher <br> - The game client <br> - The map editor <br> - The sharing platform"
+          description: "Void Clash is composed of 4 elements: <br><br> - The launcher <br> - The game client <br> - The map editor <br> - The sharing platform"
         },
         n8: {
           question: "How can I unistall Void Clash on my computer ?",
-          description: "answer"
+          description: "Depending on your operating system, you can process the following procedure : <br><br> - On windows, Go into '<strong>C:</strong> > <strong>Program Files</strong> > <strong>Void Clash</strong>'. Then execute 'Unistall.exe' and follow the instructions. <br> Or you can open your <strong>Control Panel</strong>, then go into <strong>Program & Functionnality</strong> and finnaly right click on Void Clash and select '<strong>Unistall</strong>'. "
         }
       },
 
@@ -184,11 +184,11 @@ app.config(function ($translateProvider) {
         title: "The Launcher",
         n1: {
           question: "What is the Launcher ?",
-          description: "answer"
+          description: "The Launcher is the central point of the Void Clash game. It allows you to execute many operation such as find a server, launch a matchmakin session, set up your game preferences et many more."
         },
         n2: {
           question: "How to find a server ?",
-          description: "answer"
+          description: "Void Clash allows you to quicly find a game server to join a custom game. You just simply have to click on the <strong>server list icon</strong> to open the server list. Now you can browse the list and choose a server to connect on. There are many filters available in order to simplify your research."
         },
         n3: {
           question: "The MatchMaking system",
@@ -196,11 +196,11 @@ app.config(function ($translateProvider) {
         },
         n4: {
           question: "How can I select my game settings ?",
-          description: "answer"
+          description: "To change your game settings, click on the settings icon. You should find all the option you want to set up."
         },
         n5: {
           question: "How to start a matchmaking game session ?",
-          description: "answer"
+          description: "To start a match, just click on the main fight icon. It will start a counter while the system is finding opponents."
         },
         n6: {
           question: "How start an offline game session ?",
@@ -212,11 +212,11 @@ app.config(function ($translateProvider) {
         title: "The Game",
         n1: {
           question: "How to play ?",
-          description: "answer"
+          description: "In order to drive your spacecraft, by default you can use the keyboard key <strong>Z, Q, S D</strong>. Of course it depends on your settings and your keyboard. To shoot, use the <strong>main</strong> and the <strong>second click</strong> of your mouse."
         },
         n2: {
           question: "How to select a weapon ?",
-          description: "answer"
+          description: "To select or change a weapon, press <strong>ESC</strong> to open the game menu. Then select the <strong>Weapon</strong> menu and choose between the main and the secondary weapon."
         },
         n3: {
           question: "How create and edit a new weapon ?",
@@ -224,11 +224,11 @@ app.config(function ($translateProvider) {
         },
         n4: {
           question: "How to change the server map ?",
-          description: "answer"
+          description: "Before changing a map, you have to authenticate yourself with the server using the command : <br><strong>/auth <em>serverpassword</em></strong> <br><br>Then press <strong>ESC</strong> and select the <strong>Server Administration</strong> menu. You should see the change map item."
         },
         n5: {
-          question: "How to change the server gamemod ?",
-          description: "answer"
+          question: "How to change the server game mode ?",
+          description: "Before changing a game mode, you have to authenticate yourself with the server using the command : <br><strong>/auth <em>serverpassword</em></strong> <br><br>Then press <strong>ESC</strong> and select the <strong>Server Administration</strong> menu. You should see the change mode item."
         }
       },
 
@@ -236,15 +236,15 @@ app.config(function ($translateProvider) {
         title: "The Map Editor",
         n1: {
           question: "How to start the map editor ?",
-          description: "answer"
+          description: "You can start the map editor from the launcher by clicking on its icon."
         },
         n2: {
           question: "How to create a new map ?",
-          description: "answer"
+          description: "To create a new map, just simply click on the create icon in the topbar."
         },
         n3: {
           question: "How to edit an existing map ?",
-          description: "answer"
+          description: "To edit a map, click on the open icon and then browse to the file containing the map."
         },
         n4: {
           question: "Map editor's functions",
@@ -256,7 +256,7 @@ app.config(function ($translateProvider) {
         },
         n6: {
           question: "How to save a map ?",
-          description: "answer"
+          description: "The save button takes place in the topbar."
         }
       },
 
