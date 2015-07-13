@@ -121,7 +121,7 @@ app.config(function ($translateProvider) {
       },
       gravity: {
         title: "Gravity Field",
-        description: "Gravity"
+        description: "Gravity Fields are big issues for your opponents ! They can transform physic laws, give damage and steal the energy."
       },
       shield: {
         title: "Shield",
@@ -410,7 +410,7 @@ $translateProvider.translations('fr', {
     },
     gravity: {
       title: "Champs de gravité",
-      description: ""
+      description: "Les champs de gravité sont des zones dangeureuses pour vos enemmis ! Ils jouent avec la physique, cause des dommages et draine l'energie."
     },
     shield: {
       title: "Shield",
