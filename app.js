@@ -119,21 +119,17 @@ app.config(function ($translateProvider) {
         title: "Bullet",
         description: "It represent all kind of weapons you can use to harass your enemy.<br>A machine gun or a sniper can be your friends to win."
       },
-      engine: {
-        title: "Engine",
-        description: "Engine weapons are your peace-keeper !<br> They allow you to absorb enemy shots, regenere life and give you more speed."
+      gravity: {
+        title: "Gravity Field",
+        description: "Gravity"
       },
-      rocket: {
-        title: "Rocket",
-        description: "What could be better than a missile to disperse your opponent's remains in the void ? <br><br>Where you run it, it will explode !"
+      shield: {
+        title: "Shield",
+        description: "Shield weapons are your peace-keeper !<br> They allow you to absorb enemy shots, regenere life and give you more speed."
       },
       turret: {
         title: "Turret",
         description: "Turrets are redoubtable for your enemy !<br>It targets and locks your enemy's position and then fire them when it is possible."
-      },
-      zone: {
-        title: "Zone",
-        description: " Zone"
       }
     },
     newsletter: {
@@ -412,21 +408,17 @@ $translateProvider.translations('fr', {
       title: "Balle",
       description: "L'expression feu nourris prend tout son sens avec ces armes !<br> Sniper ou simple mitraillette seront vos alliés dans la victoire."
     },
-    engine: {
-      title: "Moteur",
-      description: "Les moteurs sont vos anges gardiens !<br> Ils vous permettent d'absorber des dégats, régénerer de la vie ou même vous donner de la vitesse."
+    gravity: {
+      title: "Champs de gravité",
+      description: ""
     },
-    rocket: {
-      title: "Rocket",
-      description: "Quoi de mieux qu'un missile pour disperser votre adversaire dans l'espace ? <br>Là où vous l'enverrez, elle explosera !"
+    shield: {
+      title: "Shield",
+      description: "Les boucliers sont vos anges gardiens !<br> Ils vous permettent d'absorber des dégats, régénerer de la vie ou même vous donner de la vitesse."
     },
     turret: {
       title: "Tourelle",
       description: "Les tourelles sont redoubtable !<br>Elle cible et verrouille vos ennemis afin de les pulvériser dès qu'ils entre dans leurs champs d'action !"
-    },
-    zone: {
-      title: "Zone",
-      description: " Zone"
     }
   },
   newsletter: {

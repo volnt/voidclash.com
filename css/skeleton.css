@@ -152,14 +152,19 @@ a {
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
   margin-left: 15px;
-  box-sizing: border-box; 
+}
+
+.intro a, .itm a {
+  color:white;
+  text-decoration: underline;
+    box-sizing: border-box; 
   transition: all 200ms ease-in-out; 
   -webkit-transition: all 200ms ease-in-out; 
   -moz-transition: all 200ms ease-in-out; 
   -o-transition: all 200ms ease-in-out;
 }
 
-a:hover, .copyright a:hover {
+a:hover, .copyright a:hover, .intro a:hover, .itm a:hover {
   color: rgba(160, 196, 35, 1); 
 }
 
