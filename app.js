@@ -36,8 +36,8 @@ app.config(function ($translateProvider) {
       doc: "doc"
     },
     headline: {
-      greenlight: "Join us and help us to be <strong>Greenlit</strong> !",
-      competitive: "A <strong>fast-paced</strong>, <strong>online</strong> and<br /> <strong>competitive</strong> shoot'em up arena.",
+      greenlight: "We're now live on Steam Greenlight™ !<br>Please come to see us and bring some feedbacks :-)",
+      competitive: "Try the beta <em>now</em>!<br> Get it on <a href='http://get.voidclash.com'>http://get.voidclash.com</a>",
       user_friendly: "A full featured and simple <strong>user-friendly</strong> interface",
       guns: "A <strong>badass</strong>, gun system !"
     },
