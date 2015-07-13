@@ -32,7 +32,8 @@ app.config(function ($translateProvider) {
       support: "Support",
       community: "Community",
       get: "<u>Try now!</u>",
-      greenlight: "Greenlit us"
+      greenlight: "Greenlit us",
+      doc: "doc"
     },
     headline: {
       greenlight: "Join us and help us to be <strong>Greenlit</strong> !",
@@ -324,7 +325,8 @@ $translateProvider.translations('fr', {
     support: "Support",
     community: "Communauté",
     get: "<u>Essayez la beta!</u>",
-    greenlight: "Greenlight"
+    greenlight: "Greenlight",
+    doc: "doc"
   },
   headline: {
     greenlight: "Rejoignez nous et aidez nous à conquérir <strong>Greenlight</strong> !",
