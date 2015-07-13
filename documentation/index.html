@@ -7,7 +7,6 @@
     <meta name="description" content="">
     <meta name="author" content="Ivor">
 
-    <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
     <style type="text/css">
@@ -39,13 +38,20 @@ body {
 	<a class="brand" href="#">Void Clash Documentation</a> <!-- TIP: Change this for the name of your file -->
      	<div class="nav-collapse">
         <ul class="nav">
-              <li><a href="#top" class="active">Top</a></li>
-              <li><a href="#file">File</a></li>
-              <li><a href="#game">Game</a></li>
-              <li><a href="#horde">Horde</a></li>
-              <li><a href="#player">Player</a></li>
-              <li><a href="#server">Server</a></li>
-              <li><a href="#weapon">Weapons</a></li>
+          <li><a href="#commands">Commands</a></li>
+          <li role="presentation" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                Configuration File <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#file">File Strucure</a></li>
+                <li><a href="#game">Game</a></li>
+                <li><a href="#horde">Horde</a></li>
+                <li><a href="#player">Player</a></li>
+                <li><a href="#server">Server</a></li>
+                <li><a href="#weapon">Weapons</a></li>
+              </ul>
+            </li>
           </ul>
 </div>
 	</div>
@@ -58,13 +64,121 @@ body {
 	    <h1>Void Clash Documentation</h1>
 	    
 	    <p>All the documentation allows you to customize the game as you want. <br>
-      Here it's all about the configuration file !</p>
+      Here it's all about the game and its features !</p>
 	</div> <!-- masthead -->
 
+<section id="commands">
+    <div class="page-header">
+       <h1>Server Commands</h1>
+     </div>
+
+<div class="row">
+    <div class="span3">
+  <h3>Main console cmds</h3>
+  <p>You can use those commands using the chat windows in-game to manage your server</p>
+</div>
+<div class="span9">
+
+        <h5>Main</h5>
+        <table class="table table-bordered table-striped">
+              <thead>
+            <tr>
+                  <th>Command</th>
+                  <th>Usage</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+            <tr>
+              <td><code>/auth</code></td>
+              <td>/auth <strong>password</strong></td>
+              <td>Authenticate with the server</td>
+            </tr>
+            <tr>
+              <td><code>/config</code></td>
+              <td>/config</td>
+              <td>Reload the server configuration</td>
+            </tr>
+            <tr>
+              <td><code>/nick</code></td>
+              <td>/nick <strong>username</strong></td>
+              <td>Change your username</td>
+            </tr>
+            <tr>
+              <td><code>/kick</code></td>
+              <td>/kick <strong>playerid</strong></td>
+              <td>Kick a player from the server</td>
+            </tr>
+            <tr>
+              <td><code>/help</code></td>
+              <td>/help</td>
+              <td>Display the help</td>
+            </tr>
+          </tbody>
+            </table>
+
+          <h5>Maps</h5>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Command</th>
+                <th>Usage</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>/next_map</code></td>
+                <td>/next_map</td>
+                <td>Change the server map with the next one</td>
+              </tr>
+              <tr>
+                <td><code>/prev_map</code></td>
+                <td>/prev_map</td>
+                <td>Change the server map with the previous one</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h5>Modes</h5>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Command</th>
+                <th>Usage</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td><code>/dm</code></td>
+              <td>/dm</td>
+              <td>Change the server mode for Deathmatch</td>
+            </tr>
+            <tr>
+              <td><code>/tdm</code></td>
+              <td>/tdm</td>
+              <td>Change the server mode for Team Deathmatch</td>
+            </tr>
+            <tr>
+              <td><code>/ctf</code></td>
+              <td>/ctf</td>
+              <td>Change the server mode for Capture The Flag</td>
+            </tr>
+            <tr>
+              <td><code>/surv</code></td>
+              <td>/surv</td>
+              <td>Change the server mode for Survivor</td>
+            </tr>
+            </tbody>
+          </table>
+      </div>
+        </div>
+</section>
 
 <section id="file">
     <div class="page-header">
-       <h1>Configuration File <small>customization and highlights</small></h1>
+       <h1>1. Configuration File <small>customization and highlights</small></h1>
      </div>
 
  <div class="alert alert-info"> <b>Heads up!</b> Here are defined all elements needed by the server to run properly. Anyway, you can change the order of the element and add more configuration in the file ! </div>
@@ -95,7 +209,7 @@ body {
 
 <section id="game">
     <div class="page-header">
-       <h1>Game configuration</h1>
+       <h1>2. Game configuration</h1>
      </div>
 
   <div class="row">
@@ -219,7 +333,7 @@ body {
 
 <section id="horde">
     <div class="page-header">
-       <h1>Horde configuration</h1>
+       <h1>3. Horde configuration</h1>
      </div>
 
   <div class="row">
@@ -335,7 +449,7 @@ body {
 
 <section id="player">
     <div class="page-header">
-       <h1>Player configuration</h1>
+       <h1>4. Player configuration</h1>
      </div>
 
   <div class="row">
@@ -470,7 +584,7 @@ body {
 
 <section id="server">
     <div class="page-header">
-       <h1>Server configuration</h1>
+       <h1>5. Server configuration</h1>
      </div>
 
   <div class="row">
@@ -558,10 +672,8 @@ body {
 
 <section id="weapon">
 	<div class="page-header">
-	  <h1>Weapons</h1>
+	  <h1>6. Weapons</h1>
 	</div>
-
-    <hr />
 
     <div class="row">
       <div class="span3">
