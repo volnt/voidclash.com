@@ -46,7 +46,7 @@ app.config(function ($translateProvider) {
     },
     concept: {
       title: "<strong>game</strong> overview",
-      description: "Void Clash is a fast-paced, online and competitive arena shooter. Pilot a ship in top down view and overcome your enemies in explosives arena fights.<br>Void Clash Allows you to fully customize your game. You can modidy the game physics, create your own weapons, create your map... play the way you want!",
+      description: "Void Clash is a fast-paced, online and competitive arena shooter. Pilot a ship in top down view and overcome your enemies in explosives arena fights.<br>Void Clash allows you to fully customize your game. You can modify the game physics, create your own weapons and maps... play the way you want!",
       gameplay: {
         title: "An innovative gameplay",
         description: "Highly focused on your skill and teamwork, the gameplay will bring you into intense fights in arenas. Managing your inertia, <br>energy and anticipating your enemy's moves will be the key to victory."
