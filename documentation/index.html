@@ -209,47 +209,47 @@ body {
             <tr>
                   <td><code>speed</code></td>
                   <td>int</td>
-                  <td></td>
+                  <td>General speed of the game</td>
                 </tr>
             <tr>
                   <td><code>zoom</code></td>
                   <td>float</td>
-                  <td></td>
+                  <td>Maximum value of the zoom</td>
             </tr>
             <tr>
                   <td><code>friendly_fire_own</code></td>
                   <td>int</td>
-                  <td></td>
+                  <td>Own friendly fire, get damage from your weapons, from (0-100 for 1.x usage, upgrade for more)</td>
             </tr>
             <tr>
               <td><code>friendly_fire_team</code></td>
               <td>int</td>
-              <td></td>
+              <td>Team friendly fire, give and take damage from your teamates weapons, from (0-100 for 1.x usage, upgrade for more)</td>
             </tr>
             <tr>
               <td><code>round_nb</code></td>
               <td>int</td>
-              <td></td>
+              <td>Number of rounds</td>
             </tr>
             <tr>
               <td><code>map</code></td>
               <td>string</td>
-              <td></td>
+              <td>Default map loaded, useful to change the map from the web interface</td>
             </tr>
             <tr>
               <td><code>map_duration</code></td>
               <td>int</td>
-              <td></td>
+              <td>Map duration in seconde</td>
             </tr>
             <tr>
               <td><code>mode</code></td>
               <td>string</td>
-              <td></td>
+              <td>>Default mode loaded, useful to change the map from the web interface</td>
             </tr>
             <tr>
               <td><code>warmup_duration</code></td>
               <td>int</td>
-              <td></td>
+              <td>Warmup duration in seconde</td>
             </tr>
           </tbody>
             </table>
@@ -331,42 +331,42 @@ body {
             <tr>
                   <td><code>respawnTime</code></td>
                   <td>float</td>
-                  <td></td>
+                  <td>Define the frequency of respawn, in seconde</td>
                 </tr>
             <tr>
                   <td><code>depopTime</code></td>
                   <td>float</td>
-                  <td></td>
+                  <td>At the end, the bot will depop, in seconde</td>
             </tr>
             <tr>
                   <td><code>speed</code></td>
                   <td>int</td>
-                  <td></td>
+                  <td>Speed of spacecraft</td>
             </tr>
             <tr>
               <td><code>life</code></td>
               <td>int</td>
-              <td></td>
+              <td>Life of spacecraft</td>
             </tr>
             <tr>
               <td><code>size</code></td>
               <td>int</td>
-              <td></td>
+              <td>Size of spacecraft</td>
             </tr>
             <tr>
               <td><code>spawn_range</code></td>
               <td>int</td>
-              <td></td>
+              <td>Minimal distance for respawn from others</td>
             </tr>
             <tr>
               <td><code>damage</code></td>
               <td>int</td>
-              <td></td>
+              <td>Damage from spacecraft</td>
             </tr>
             <tr>
               <td><code>acceleration</code></td>
               <td>int</td>
-              <td></td>
+              <td>Acceleration of spacecraft</td>
             </tr>
           </tbody>
             </table>
@@ -451,57 +451,47 @@ body {
             <tr>
                   <td><code>acceleration</code></td>
                   <td>int</td>
-                  <td></td>
+                  <td>Acceleration of your own spacecraft</td>
                 </tr>
             <tr>
                   <td><code>max_speed</code></td>
                   <td>int</td>
-                  <td></td>
+                  <td>Maximum speed of your own spacecraft</td>
             </tr>
             <tr>
                   <td><code>friction</code></td>
                   <td>float</td>
-                  <td></td>
+                  <td>Deceleration speed of your own spacecraft</td>
             </tr>
             <tr>
               <td><code>size</code></td>
               <td>int</td>
-              <td></td>
+              <td>Size of your own spacecraft</td>
             </tr>
-            <tr>
+            <!--<tr>
               <td><code>velocity</code></td>
               <td>float</td>
-              <td></td>
-            </tr>
+              <td> of your own spacecraft</td>
+            </tr>-->
             <tr>
               <td><code>max_energy</code></td>
               <td>int</td>
-              <td></td>
+              <td>Maximum energy of your own spacecraft</td>
             </tr>
             <tr>
               <td><code>regen_energy</code></td>
               <td>int</td>
-              <td></td>
+              <td>Energy regeneration of your own spacecraft</td>
             </tr>
             <tr>
               <td><code>life</code></td>
               <td>int</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><code>regen_life</code></td>
-              <td>float</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><code>speed_cap</code></td>
-              <td>int</td>
-              <td></td>
+              <td>Life of your own spacecraft</td>
             </tr>
             <tr>
               <td><code>invulnerable_time</code></td>
               <td>float</td>
-              <td>in second</td>
+              <td>Time of invicibillity while a ship is in the respawn, in second</td>
             </tr>
           </tbody>
             </table>
@@ -574,22 +564,22 @@ body {
             <tr>
                   <td><code>name</code></td>
                   <td>string</td>
-                  <td></td>
+                  <td>Name of the server</td>
                 </tr>
             <tr>
                   <td><code>password</code></td>
                   <td>string</td>
-                  <td></td>
+                  <td>Password to manage the server</td>
             </tr>
             <tr>
                   <td><code>tickrate</code></td>
                   <td>int</td>
-                  <td></td>
+                  <td>Frequency of the package update</td>
             </tr>
             <tr>
               <td><code>max_player</code></td>
               <td>int</td>
-              <td></td>
+              <td>Maximun amount of player</td>
             </tr>
           </tbody>
             </table>
@@ -699,10 +689,7 @@ body {
   int     slow;               // Bullet / Bomb / Rocket / Gravity - Power of slow in percent (0 - 100)
   int     slow_duration;      // Bullet / Bomb / Rocket - Duration of slow
 
-  struct s_weapon   *subWeapon;   // If a weapon has a subweapon (ie. Turret)
   std::string   subWeaponName;    // Just used for parsing
-
-  int     getWeaponIndex();
 </pre>
       </div>
         </div>
@@ -736,18 +723,18 @@ body {
                   <td><code>name</code></td>
                   <td>string</td>
                   <td>All</td>
-                  <td>ie. G_Gravity</td>
+                  <td>Name of the weapon, ie. G_Gravity</td>
                 </tr>
             <tr>
                   <td><code>category</code></td>
                   <td>Bullet<br>
                       Bomb<br>
-                      Rocket<br>
+                      Shield<br>
                       Turret<br>
                       Gravity
                   </td>
                   <td>All</td>
-                  <td>Use uppercase to identify. ie. GRAVITY</td>
+                  <td>Use uppercase to identify. ie. BOMB, BULLET, GRAVITY, SHIELD and TURRET</td>
                 </tr>
             <tr>
                   <td><code>energy_cost</code></td>
@@ -765,21 +752,21 @@ body {
               <td><code>Damage</code></td>
               <td>Bullet<br>
                 Bomb<br>
-                Rocket<br>
+                Shield<br>
                 Gravity
               </td>
               <td>Bullet<br>
                 Bomb<br>
-                Rocket<br>
+                Shield<br>
                 Gravity
               </td>
-              <td></td>
+              <td>Damage of the weapon, for Shield it is absorbtion (0 - 100)</td>
             </tr>
             <tr>
               <td><code>speed</code></td>
               <td>int</td>
               <td>All</td>
-              <td>Velocity</td>
+              <td>Velocity of the weapon. For the Shield, it defines the new max speed value for the ship</td>
             </tr>
             <tr>
               <td><code>duration</code></td>
@@ -802,7 +789,7 @@ body {
             <tr>
               <td><code>size_explosion</code></td>
               <td>int</td>
-              <td>Rocket<br>
+              <td>Shield<br>
               Bomb
               </td>
               <td>Size of the explosion</td>
@@ -822,16 +809,14 @@ body {
             <tr>
               <td><code>acceleration</code></td>
               <td>int</td>
-              <td>Bomb<br>
-              Shield
+              <td>Shield
               </td>
-              <td>Give a speed boost</td>
+              <td>Set a new acceleration value for the ship when activated</td>
             </tr>
             <tr>
               <td><code>chain</code></td>
               <td>int</td>
-              <td>Bomb<br>
-              Shield
+              <td>Bomb
               </td>
               <td>Is triggered when in range of another explosion</td>
             </tr>
@@ -888,7 +873,7 @@ body {
               <td>int (0 - 100)</td>
               <td>Bullet<br>
                   Bomb<br>
-                  Rocket<br>
+                  Shield<br>
                   Gravity
               </td>
               <td>Power of slow in percent (0 - 100)</td>
@@ -898,7 +883,7 @@ body {
               <td>int</td>
               <td>Bullet<br>
                   Bomb<br>
-                  Rocket
+                  Shield
               </td>
               <td>Duration of slow</td>
             </tr>
