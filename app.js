@@ -129,11 +129,11 @@ app.config(function ($translateProvider) {
       },
       turret: {
         title: "Turret",
-        description: "Turrets are dreadful for your enemy !<br>It targets and locks your enemy's position to shoot accurately."
+        description: "Turrets are dreadful for your enemy !<br>It locks your enemy's position to shoot accurately."
       }
     },
     newsletter: {
-      title: "STAY CONNECTED #VOIDCLASHGAME"
+      title: "STAY TUNED #VOIDCLASHGAME"
     },
     footer: {
       lm : "Legal Mentions",
