@@ -29,14 +29,14 @@ app.config(function ($translateProvider) {
     },
     nav: {
       game: "The Game",
-      support: "Support",
+      support: "Faq",
       community: "Community",
       get: "<u>Try now!</u>",
       greenlight: "Greenlit us",
       doc: "doc"
     },
     headline: {
-      greenlight: "We're now live on Steam Greenlight™ !<br>Please come to see us and bring some feedbacks :-)",
+      greenlight: "We're now live on Steam Greenlight™ !<br>Please come to see us and give us some feedbacks :-)",
       competitive: "Try the beta <em>now</em>!<br> Get it on <a href='http://get.voidclash.com'>http://get.voidclash.com</a>",
       user_friendly: "A full featured and simple <strong>user-friendly</strong> interface",
       guns: "A <strong>badass</strong>, gun system !"
@@ -45,91 +45,91 @@ app.config(function ($translateProvider) {
       title: "<strong>Discover</strong> the game"
     },
     concept: {
-      title: "<strong>the game</strong> overview",
-      description: "Void Clash is an online and competitive arena shooter. It brings you an innovative gameplay mixing several concepts from the video game’s world.<br>Controlling a spacecraft with a top view, you have to defeat your enemies during incredible arena fights.<br>Void Clash is also giving you a full game element customization ! Players can create their own arena and to setup all their spacecraft, including weapons.<br>Void Clash gives you quicly a lot of fun and allows you to progress in an interactive and competitive universe !",
+      title: "<strong>game</strong> overview",
+      description: "Void Clash is a fast-paced, online and competitive arena shooter. Pilot a ship in top down view and overcome your enemies in explosives arena fights.<br>Void Clash Allows you to fully customize your game. You can modidy the game physics, create your own weapons, create your map... play the way you want!",
       gameplay: {
         title: "An innovative gameplay",
-        description: "Highly focused on player skills and team work, <br>the new Void Clash gameplay will bring you into intense fights in the arena where managing your inertia, <br>your energy and anticipate your enemy's moves will be part of your war !"
+        description: "Highly focused on your skill and teamwork, the gameplay will bring you into intense fights in arenas. Managing your inertia, <br>energy and anticipating your enemy's moves will be the key to victory."
       },
       guns: {
-        title: "A badass gun system",
-        description: "The game allows you to browse between six weapon categories entirely customisable using more than ten parameters as modify the impact damage, the range and many more !"
+        title: "A badass weapon system",
+        description: "The game allows you to choose between five weapon categories entirely customizable using more than ten parameters: You can modify the impact damage, the range, the energy cost and more !"
       },
       team: {
-        title: "Work with your team",
-        description: "The team play is as important as your skill when you take part in a team battle.<br>Your team and yourself need to define and adapt the optimal strategies to defeat the opponents team."
+        title: "Work with your teammates",
+        description: "The teamplay is as important as your skill when you take part in a team battle.<br>Your team and yourself need to define and adapt the optimal strategies to defeat the opponent's team."
       },
       mods: {
-        title: "Which game mod ?",
-        description: "Maybe you are a flag stealer, or a serial shooter ?<br>No matter, you can find what describe the best your style with six game mods available, solo or multiplayer !"
+        title: "Which game mode ?",
+        description: "Are you are a flag stealer, or a serial shooter ?<br>No problem, you can find what is the best for you among six available game modes!"
       },
       matchmaking: {
-        title: "A matchmaking system",
-        description: "Competitor or simply casual gamer, you will be able to find the type of game you want : <br>Arcades games or Ranked matches with the matchmaking tool."
+        title: "Use matchmaking, or not!",
+        description: "Competitor or simply casual gamer, you will be able to find the type of game you want: <br>Arcade games for fun or Ranked matches for seasoned players."
       },
       user_friendly: {
-        title: "User-friendly Interface",
-        description: "Void Clash own a full game interface, including a launcher paired with the Steam SDK, <br>a game client and a map editor."
+        title: "Improve the game",
+        description: "Feel free to be a part of the community development by creating and sharing your own maps and weapons."
       }
     },
     modes: {
       title: "<strong>flag stealer</strong> or a serial shooter ?",
-      description: "King of the galaxy, Killer or Flag stealer, you can choose which mod is your favorite.<br>Paired to all those mods, you can enable the Horde mod to make the game more funny (and harder) !",
+      description: "Ruler of the galaxy, Killer or Flag stealer, you can choose which mode is your favorite.<br>Paired to all those modes, you can enable the Horde mode to make the game funnier (and harder) !",
       ctf: {
         title: "Capture The Flag",
-        description: "You are fighting in the void arena with your entire team. Your target is to steal and bring back the opponent flag into your team base."
+        description: "You are fighting in the arena with your team. Your target is to steal and bring back the opponent's flag to your base!"
       },
       ffa: {
         title: "Free For All",
-        description: "In the void arena, your are alone against others. You have to kill a maximum amount of player and protect yourself from others attack ! Don't forget the best score is calculated with the kill and death ratio."
+        description: "In the arena, your are alone against everyone. Kill a maximum amount of players and protect yourself from enemies' attacks ! The more enemies you kill, the best your score is."
       },
       horde: {
         title: "Horde",
-        description: "Like in the FFA mod, you are alone except this time, tones of spacecrafts are comming by wave to erradicate your life ! When you die in this mod, your respawn will be the next round. <strong>You can active this mod in every others mod !</strong>"
+        description: "Like in the FFA mode, you are alone except this time, tones of spacecrafts are comming by wave to erradicate your life ! When you die in this mod, your respawn will be the next round. <strong>You can active this mod in every others mod !</strong>"
       },
       koth: {
         title: "King Of The Hill",
-        description: "Everyone is fighting to occup a specific map zone and keep it safe from opponents attacks. The team who keep more longer the zone whitin the round time won !"
+        description: "Everyone is fighting to control a specific area and to keep it safe from opponents. The longer you control the areas, the best your score is."
       },
       svr: {
         title: "Survivor",
-        description: "Like in the FFA mod, you are fighting against others except if someone die, he will respawn at the next round. There will be only one left at the end !"
+        description: "Be the last fighter in the arena!"
       },
       tdm: {
         title: "Team Deathmatch",
-        description: "Probably the most known mod on the earth and in the void arena, the goal is the same : Kill and kill again until the round's end. Keep in mind that your score is made with your kill and death ratio !"
+        description: "With the help of your teammates, destroy the enemy's fleet!"
       },
       tsvr: {
         title: "Team Survivor",
-        description: "Like in the FFA mod, you are fighting against the opponents team except if someone die, he will respawn at the next round. There will be only one left at the end !"
+        description: "Be the last team fighting in the arena!"
       }
     },
     weapon: {
       title: "<strong>The badass</strong> weapon system",
       description: {
-        first: "⤷ <strong>Create your weapons</strong> and <strong>totally customize them</strong> with more than <em>ten parameters</em> !",
-        second: "⤷ Choose between <strong>six weapon categories</strong> including the totally <strong>crazy <u>Engine</u> weapon</strong> !"
+        first: "⤷ <strong>Create your own weapons</strong> and <strong>totally customize them</strong> with more than <em>ten parameters</em> !",
+        second: "⤷ Choose between <strong>five weapon categories</strong> including the totally <strong>crazy <u>Gravity</u> weapon</strong> !"
       },
       subtitle: "<strong>Which kind of killer are you ?</strong>",
       bomb: {
         title: "Bomb",
-        description: "Someone wants to destroy an entire fleet ? <br>By optimising some other parameters, you will be able to strike in the opponent base !"
+        description: "Someone who wants to destroy an entire fleet ? <br>Manage the detonation to strike the other team."
       },
       bullet: {
         title: "Bullet",
-        description: "It represent all kind of weapons you can use to harass your enemy.<br>A machine gun or a sniper can be your friends to win."
+        description: "It represents all kind of weapons you can use to harass your enemy.<br>A machine gun or a sniper can be your friend to win."
       },
       gravity: {
         title: "Gravity Field",
-        description: "Gravity Fields are big issues for your opponents ! They can transform physic laws, give damage and steal the energy."
+        description: "Gravity Fields are big issues for your opponents ! They can change the laws of physics, deal damages and drain the energy."
       },
       shield: {
         title: "Shield",
-        description: "Shield weapons are your peace-keeper !<br> They allow you to absorb enemy shots, regenere life and give you more speed."
+        description: "Shields are your guardian angels !<br> They allow you to absorb enemy shots, fix your hull and give you speed boosts."
       },
       turret: {
         title: "Turret",
-        description: "Turrets are redoubtable for your enemy !<br>It targets and locks your enemy's position and then fire them when it is possible."
+        description: "Turrets are dreadful for your enemy !<br>It targets and locks your enemy's position to shoot accurately."
       }
     },
     newsletter: {
@@ -318,7 +318,7 @@ $translateProvider.translations('fr', {
   },
   nav: {
     game: "Le jeu",
-    support: "Support",
+    support: "Faq",
     community: "Communauté",
     get: "<u>Essayez la beta!</u>",
     greenlight: "Greenlight",
