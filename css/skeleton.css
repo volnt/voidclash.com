@@ -469,7 +469,7 @@ hr {
   height: 100%;
   display: block;
   position: relative;
-  background: url('../images/background.png');
+  background-image: url('../images/bg2.jpg');
   background-size: cover;
 }
 
@@ -478,6 +478,7 @@ hr {
   height: 100%;
   display: block;
   position: relative;
+  background-color: black;
   background: url('../images/bg2.jpg');
   background-size: cover;
 }
