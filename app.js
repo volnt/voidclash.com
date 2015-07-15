@@ -325,7 +325,7 @@ $translateProvider.translations('fr', {
     doc: "doc"
   },
   headline: {
-    greenlight: "On est maintenant sur Steam Greenlight™ ! <br>Venez nous apporter votre avis sur le jeu",
+    greenlight: "On est maintenant sur Steam Greenlight™ ! <br>Venez nous apporter votre avis sur le jeu :-)",
     competitive: "Un shoot'em up complètement <br><strong>fou</strong>, <strong>en ligne</strong> et <strong>compétitif</strong>.",
     user_friendly: "Une interface complète et <strong>intuitive</strong>.",
     guns: "Découvrez le système d'arme totallement <strong>badass</strong> !",
