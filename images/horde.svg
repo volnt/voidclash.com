@@ -50,7 +50,7 @@
 			l6.819-27.765c-5.997-2.993-11.497-7.232-16.083-12.698C216.118,246.254,214.643,223.53,224.542,205.862z"/>
 	</g>
 	<circle fill="none" stroke="#ffffff" stroke-miterlimit="10" cx="265.14" cy="250.262" r="124.937"/>
-	<text fill="#ffffff" transform="matrix(1 0 0 1 249.4347 210.4701)" font-family="'Titillium-Bold'" font-size="10">HORDE</text>
+	<!--<text fill="#ffffff" transform="matrix(1 0 0 1 249.4347 210.4701)" font-family="'Titillium-Bold'" font-size="10">HORDE</text>-->
 	<circle fill="none" stroke="#ffffff" stroke-width="6" stroke-miterlimit="10" cx="265.14" cy="250.262" r="130.072"/>
 	<line fill="none" stroke="#ffffff" stroke-miterlimit="10" x1="97.49" y1="250.262" x2="182.917" y2="250.262"/>
 	<line fill="none" stroke="#ffffff" stroke-miterlimit="10" x1="347.364" y1="250.262" x2="432.79" y2="250.262"/>
