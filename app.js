@@ -358,7 +358,7 @@ $translateProvider.translations('fr', {
     },
     user_friendly: {
       title: "Une interface simple",
-      description: "Void Clash comprend une interface de jeu complète, avec un launcher qui intègre la SDK Steam, <br>un client de jeu et un éditeur de carte."
+      description: "Void Clash comprend une interface de jeu complète, avec un launcher qui intègre la SDK Steam, un client de jeu et un éditeur de carte."
     }
   },
   modes: {
