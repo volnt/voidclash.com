@@ -217,7 +217,7 @@ app.config(function ($translateProvider) {
         },
         n3: {
           question: "How create and edit a new weapon ?",
-          description: "answer"
+          description: "All weapons informations are available in the documentation: <a href='http://www.voidclash.com/documentation/#weapon'>http://www.voidclash.com/documentation/</a>."
         },
         n4: {
           question: "How to change the server map ?",
