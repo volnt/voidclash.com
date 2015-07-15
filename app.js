@@ -133,7 +133,7 @@ app.config(function ($translateProvider) {
       }
     },
     newsletter: {
-      title: "STAY TUNED #VOIDCLASHGAME"
+      title: "STAY TUNED #VOIDCLASH"
     },
     footer: {
       lm : "Legal Mentions",
@@ -334,15 +334,15 @@ $translateProvider.translations('fr', {
     title: "<strong>Découvrez</strong> le jeu"
   },
   concept: {
-    title: "<strong>Le jeu</strong> en aperçu",
-    description: "Void Clash est un shoot'em up arena rapide, en ligne et compétitif. Ca vous apporte un mélange innovant de différents concept du jeu vidéo. En controllant un vaisseau vu de dessus, vous devez battre vos ennemies pendant d'incroyables combats en arènes.<br>Void Clash vous offre aussi une totale possibilité de personnalisation ! Les joueurs peuvent créer leur propre arène et configurer leurs vaisseaux ainsi que leurs armes. Le jeu vous offre une progression interessante et motivante dans un univers compétitif et intéractif !",
+    title: "<strong>Aperçu</strong> du jeu",
+    description: "Void Clash est un arena shooter en ligne, nerveux et compétitif. Il apporte un mélange innovant de différents concept du jeu vidéo. En contrôlant un vaisseau vu de dessus, combattez vos ennemis dans des arènes aux bataille explosives.<br>Void Clash vous propose également la possibilité de personnaliser totalement votre jeu ! Les joueurs peuvent créer leurs propres arènes et configurer la maniabilité du vaisseau ainsi que ses armes. Le jeu vous offre une progression interessante et motivante à travers un univers compétitif et communautaire !",
     gameplay: {
       title: "Un gameplay innovant",
-      description: "Très concentré sur le skill individuel et le travail d'équipe, le nouveau gameplay de Void Clash vous imergera dans d'intenses batailles dans l'arène où gérer votre inertie, votre énergie et anticiper les mouvements de vos ennemis feront  parti de votre guerre !"
+      description: "Très concentré sur le skill individuel et le travail d'équipe, le gameplay de Void Clash vous imerge dans d'intenses batailles où gérer vos déplacement, votre énergie et la stratégie adverse définiront l'issue du combat !"
     },
     guns: {
       title: "Une infinité d'armes",
-      description: "Le jeu vous permet de choisir entre six catégories d'arme entièrement personnalisable avec plus de dix paramètres à modifier comme les dégats d'impact, la portée, et beaucoup plus !"
+      description: "Le jeu vous permet de choisir entre cinq catégories d'armes entièrement personnalisables. Paramétrez les effets d'impact, la portée, le coût en énérgie et beaucoup plus ! Ou choisissez de jouer avec une configuration équilibrée par la communauté."
     },
     team: {
       title: "Travaillez en équipe",
@@ -350,63 +350,63 @@ $translateProvider.translations('fr', {
     },
     mods: {
       title: "Quel mode de jeu ?",
-      description: "Peut être que vous être un voleur de drapeau, ou un serial tireur ?<br>Peut importe, vous pouvez trouver ce qui décrit le mieux votre style avec six modes de jeu disponibles, seul ou à plusieurs !"
+      description: "Êtes-vous un voleur de drapeau, ou un serial shooter ?<br> Retrouvez votre style de jeu préféré à travers les six modes disponible."
     },
     matchmaking: {
       title: "Le matchmaking",
-      description: "Compétiteur ou simple joueur casuel, vous serez capable de trouver le type de partie que vous voulez : <br>Jeux d'arcade ou Jeux classés avec le système de matchmaking."
+      description: "Compétiteur ou simple joueur occasionnel, Choisissez le type de partie qui vous corresponds : <br>Partie rapide pour le fun ou Partie classée pour les joueurs chevronnés."
     },
     user_friendly: {
-      title: "Une interface simple",
-      description: "Void Clash comprend une interface de jeu complète, avec un launcher qui intègre la SDK Steam, un client de jeu et un éditeur de carte."
+      title: "Améliorez Void Clash !",
+      description: "Devenez membre à part entière de la communauté en proposant vos propres cartes et vos propres configurations d'armes !"
     }
   },
   modes: {
     title: "<strong>Voleur</strong> ou <strong>serial killer</strong> ?",
-    description: "Roi de la galaxie, Tueur ou Voleur de drapeau, vous pourrez choisir quel mode est votre préféré. Associé avec tous ces modes, vous pourrez activer le mode Horde pour rendre le jeu plus drôle (et plus dur) !",
+    description: "Maître de la galaxie, Tueur ou Voleur de drapeau, vous pourrez choisir quel mode est votre favoris. En plus de ces modes, vous pourrez à tout moment activer la horde pour rendre le jeu plus fun (et surtout plus difficile) !",
     ctf: {
       title: "Capture de drapeau",
-      description: "Vous vous battez dans une arène au coeur de l'espace avec votre équipe entière. Votre but est de voler et rapporter le drapeau ennemi votre base."
+      description: "Battez-vous dans une arène avec votre équipe. Votre but est de voler et rapporter le drapeau ennemi dans votre base. Organisez votre équipe pour organiser le votre !"
     },
     ffa: {
-      title: "Libre",
-      description: "Vous êtes seul contre tous. Votre objectif est d'éliminer le maximum de vos adversaires tout en évitant de se faire tuer ! Votre score sera calculé en fonction de votre ratio joueurs tués et morts."
+      title: "Chacun pour soi",
+      description: "Vous êtes seul contre tous. Votre objectif est d'éliminer le maximum de vos adversaires tout en évitant de se faire tuer ! Plus vous tuez d'ennemis, meilleur sera votre score."
     },
     horde: {
       title: "Horde",
       description: "Similaire au mode libre, vous êtes seul contre tous. Seulement cette fois-ci, des hordes de vaisseaux arrivent pour tenter de vous réduire à néant. Attention si vous mourrez, vous ré-apparaitrez au prochain round. <strong>Vous pouvez activer le mode horde dans n'importe quel autre type de partie !</strong>"
     },
     koth: {
-      title: "King Of The Hill",
-      description: "Tout le monde combat avec son équipe pour occuper et conquérir une zone spéciale de l'arène. L'équipe qui tient cette zone le plus longtemps dans le temps imparti remporte la partie !"
+      title: "Roi de la colline",
+      description: "Conquérissez avec votre équipe les différentes zones de captures disposées dans l'arène. L'équipe qui tient ces zones le plus longtemps remporte la partie !"
     },
     svr: {
       title: "Survivor",
-      description: "Similaire au mode libre, vous êtes seul contre tous. Seulement cette fois-ci, lorsque qu'un joueur meurt, il ré-apparait au round suivant. Il n'en restera qu'un !"
+      description: "Soyez le dernier survivant de la bataille !"
     },
     tdm: {
       title: "Match à mort par équipe",
-      description: "Sûrement le mode favoris des joueurs acidus, ici le but est le même : Détruire, tuer encore et encore jusqu'à la fin du round ! Votre score sera calculé en fonction de votre ratio joueurs tués et morts."
+      description: "Avec l'aide de votre équipe, faites le plus de victime dans le temps imparti !"
     },
     tsvr: {
       title: "Survivor en équipe",
-      description: "Vous êtes accompagné de votre équipe contre vos adversaires. Seulement cette fois-ci, lorsque qu'un joueur meurt, il ré-apparait au round suivant. Il n'en restera qu'un !"
+      description: "Soyez la dernière équipe en lice dans la bataille !"
     }
   },
   weapon: {
-    title: "Un système d'arme <strong>badass</strong>",
+    title: "Un système d'armes <strong>badass</strong>",
     description: {
-      first: "⤷ <strong>Creez vos armes</strong> et <strong>customisez-les de a à z</strong> avec plus d'une <em>dizaine</em> de paramètres!",
-      second: "⤷ Vous avez le choix parmis <strong>six catégories d'armes</strong> dont l'incroyable <strong>arme <u>moteur</u></strong> !"
+      first: "⤷ <strong>Creez vos armes</strong> et <strong>customisez-les de a à z</strong> avec plus d'une <em>dizaine</em> de paramètres configurables !",
+      second: "⤷ Vous avez le choix parmis <strong>cinq catégories d'armes</strong> dont les incroyables <strong>zones de <u>gravité</u></strong> !"
     },
     subtitle: "<strong>Quel genre de dégénéré êtes-vous ?</strong>",
     bomb: {
       title: "Bombe",
-      description: "Une envie de décimer une flotte entre ? <br>En optimisant ses paramètres, vous pourrez frapper au coeur de la base ennemie !"
+      description: "Une envie de décimer une flotte entière ? <br>En calculant bien votre coup, faites un strike dans les rangs ennemis !"
     },
     bullet: {
-      title: "Balle",
-      description: "L'expression feu nourris prend tout son sens avec ces armes !<br> Sniper ou simple mitraillette seront vos alliés dans la victoire."
+      title: "Bullet",
+      description: "Harrassez vos ennemis ou détruisez les en un seul coup: Sniper ou simple mitraillette seront vos alliés dans la victoire."
     },
     gravity: {
       title: "Champs de gravité",
@@ -414,15 +414,15 @@ $translateProvider.translations('fr', {
     },
     shield: {
       title: "Shield",
-      description: "Les boucliers sont vos anges gardiens !<br> Ils vous permettent d'absorber des dégats, régénerer de la vie ou même vous donner de la vitesse."
+      description: "Les boucliers sont vos anges gardiens !<br> Ils vous permettent d'absorber des dégats, régénerer de la vie ou même vous de donner un court bonus de vitesse."
     },
     turret: {
       title: "Tourelle",
-      description: "Les tourelles sont redoubtable !<br>Elle cible et verrouille vos ennemis afin de les pulvériser dès qu'ils entre dans leurs champs d'action !"
+      description: "Les tourelles sont redoubtables !<br>Elleq ciblent et verrouillent vos ennemis afin de les pulvériser dès qu'ils entrent dans leurs champs d'action !"
     }
   },
   newsletter: {
-    title: "RESTEZ CONNECTÉ #VOIDCLASHGAME"
+    title: "RESTEZ CONNECTÉ #VOIDCLASH"
   },
   footer: {
     lm : "Mentions Légales",
