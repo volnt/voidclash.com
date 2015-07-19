@@ -145,19 +145,19 @@ app.config(function ($translateProvider) {
         title: "Basics",
         n1: {
           question: "What is Void Clash ?",
-          description: "Void Clash is a fast-paced, online and competitive shoot'em up arena. It brings you an innovative gameplay mixing several concepts from the video game’s world. Controlling a spacecraft with a top view, you have to defeat your enemies during incredible arena fights. Void Clash is also giving you a full game element customization ! <br><br>Void Clash is released on the Steam Greenlight™ platform. You can reach the page by following the link here: <a href='#''>http://xxx.xx</a>"
+          description: "Void Clash is a fast-paced, online and competitive top down arena shooter. It brings you an innovative gameplay mixing several concepts from the video gameís world. Controlling a spacecraft, you have to defeat your enemies during incredible arena fights. Void Clash is also giving you a fully customizable game ! <br><br>Void Clash is released on the Steam Greenlight™ platform. You can reach the page by following the link: <a href='http://bit.ly/1I4UdSB'>http://bit.ly/1I4UdSB</a>"
         },
         n2: {
           question: "Void Clash's beta is available ?",
           description: "Yes, VoidClash's beta is now available for <strong>Windows</strong> and <strong>Linux</strong> platform. <br>You can try the beta for free by following the link: <a href='http://get.voidclash.com'>http://get.voidclash.com/</a> "
         },
         n3: {
-          question: "How works Steam Greenlight&#8482; ?",
-          description: "Steam Greenlight™ is a platform that allows active Steam users to vote on indie titles they wish to see showcased on its site. Once submitted, thousands of users will view and possibly vote or comment on the game."
+          question: "How does Steam Greenlight&#8482; work ?",
+          description: "Steam Greenlight™ is a platform is a platform that allows active Steam users to vote on indie titles they wish to see showcased on the store. Once submitted, thousands of users will view and possibly vote or comment on the game."
         },
         n4: {
-          question: "How can I help to get Void Clash greenlit ?",
-          description: "If you like our work, you can help us in many ways: <br> - First, you can vote for Void Clash on Greenlight™ <br> - You can also bring us some feedbacks about the game <br> - Finally, you can share it with your friends."
+          question: "How can I help Void Clash getting greenlit ?",
+          description: "If you like our work, you can help us in various ways: <br> - First, you can vote for Void Clash on Greenlight™ <br> - You can also bring us some feedbacks about the game <br> - Finally, you can share it to your friends"
         },
         n5: {
           question: "Which are the minimal requirements to play ?",
@@ -165,7 +165,7 @@ app.config(function ($translateProvider) {
         },
         n6: {
           question: "How can I install Void Clash on my computer ?",
-          description: "Once you get Void Clash from our download platform, depending on your operating system, you can process the following procedure : <br><br> On Windows, Go into your download folder or where you put the downloaded Void Clash installer. Then execute 'Install Void Clash.msi' and follow the setup instructions."
+          description: "Once you get Void Clash from our download platform, depending on your operating system, you can process the following procedure : <br><br>On Windows, go into your download folder or where you put the downloaded Void Clash installer. Then execute 'Install Void Clash.msi' and follow the setup instructions."
         },
         n7: {
           question: "Which are the Void Clash game's components ?",
@@ -181,11 +181,11 @@ app.config(function ($translateProvider) {
         title: "The Launcher",
         n1: {
           question: "What is the Launcher ?",
-          description: "The Launcher is the central point of the Void Clash game. It allows you to execute many operation such as find a server, launch a matchmakin session, set up your game preferences et many more."
+          description: "The Launcher is the central point of the Void Clash game. It allows you to execute many operations such as find a server, launch a ranked game, set up your game preferences and more."
         },
         n2: {
           question: "How to find a server ?",
-          description: "Void Clash allows you to quicly find a game server to join a custom game. You just simply have to click on the <strong>server list icon</strong> to open the server list. Now you can browse the list and choose a server to connect on. There are many filters available in order to simplify your research."
+          description: "Void Clash allows you to quickly find a server to join a custom game. You simply have to click on the server list icon to open the server list. Now you can browse the list and choose a server to connect on. Filters are available in order to simplify your research."
         },
         n3: {
           question: "The MatchMaking system",
@@ -193,11 +193,11 @@ app.config(function ($translateProvider) {
         },
         n4: {
           question: "How can I select my game settings ?",
-          description: "To change your game settings, click on the settings icon. You should find all the option you want to set up."
+          description: "To change your game settings, click on the settings icon. You should find all the options you want to set up."
         },
         n5: {
           question: "How to start a matchmaking game session ?",
-          description: "To start a match, just click on the main fight icon. It will start a counter while the system is finding opponents."
+          description: "To start a ranked game, click on the main fight icon. It will find opponents that have the same level."
         },
         n6: {
           question: "How start an offline game session ?",
@@ -209,11 +209,11 @@ app.config(function ($translateProvider) {
         title: "The Game",
         n1: {
           question: "How to play ?",
-          description: "In order to drive your spacecraft, by default you can use the keyboard key <strong>Z, Q, S D</strong>. Of course it depends on your settings and your keyboard. To shoot, use the <strong>main</strong> and the <strong>second click</strong> of your mouse."
+          description: "In order to drive your spacecraft, by default you can use the keyboard key Z, Q, S D. Of course it depends on your settings and your keyboard. To shoot, use the left and right click of your mouse."
         },
         n2: {
           question: "How to select a weapon ?",
-          description: "To select or change a weapon, press <strong>ESC</strong> to open the game menu. Then select the <strong>Weapon</strong> menu and choose between the main and the secondary weapon."
+          description: "To select or change a weapon, press ESC to open the game menu. Then select the Weapon menu and choose between the main and the secondary weapon. You can also press the 'B' key to open the weapon selection menu."
         },
         n3: {
           question: "How create and edit a new weapon ?",
@@ -221,11 +221,11 @@ app.config(function ($translateProvider) {
         },
         n4: {
           question: "How to change the server map ?",
-          description: "Before changing a map, you have to authenticate yourself with the server using the command : <br><strong>/auth <em>serverpassword</em></strong> <br><br>Then press <strong>ESC</strong> and select the <strong>Server Administration</strong> menu. You should see the change map item."
+          description: "Before changing a map, you have to authenticate yourself using the command : <br><strong>/auth <em>serverpassword</em></strong> <br><br>Then press ESC and select the Server Administration menu. You should see the change map button."
         },
         n5: {
           question: "How to change the server game mode ?",
-          description: "Before changing a game mode, you have to authenticate yourself with the server using the command : <br><strong>/auth <em>serverpassword</em></strong> <br><br>Then press <strong>ESC</strong> and select the <strong>Server Administration</strong> menu. You should see the change mode item."
+          description: "Before changing a game mode, you have to authenticate yourself with the server using the command : <br><strong>/auth <em>serverpassword</em></strong> <br><br>Then press ESC and select the Server Administration menu. You should see the change mode button."
         }
       },
 
@@ -237,11 +237,11 @@ app.config(function ($translateProvider) {
         },
         n2: {
           question: "How to create a new map ?",
-          description: "To create a new map, just simply click on the create icon in the topbar."
+          description: "To create a new map, click on the create icon in the topbar."
         },
         n3: {
           question: "How to edit an existing map ?",
-          description: "To edit a map, click on the open icon and then browse to the file containing the map."
+          description: "To edit a map, click on the open icon and select the map."
         },
         n4: {
           question: "Map editor's functions",
@@ -253,7 +253,7 @@ app.config(function ($translateProvider) {
         },
         n6: {
           question: "How to save a map ?",
-          description: "The save button takes place in the topbar."
+          description: "To save a map, click on the save icon in the topbar. You can chose to save the map with a new name."
         }
       },
 
