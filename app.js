@@ -276,7 +276,7 @@ app.config(function ($translateProvider) {
           description: "answer"
         },
         n5: {
-          question: "How can I open the port 13737 ?",
+          question: "My server is online but I can't connect to it",
           description: "answer"
         }
       },
