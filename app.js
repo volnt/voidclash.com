@@ -260,8 +260,8 @@ app.config(function ($translateProvider) {
       hostserver: {
         title: "Host a server",
         n1: {
-          question: "How to install a server ?",
-          description: "answer"
+          question: "How to create a server ?",
+          description: "You have to execute the server.exe in the Void Clash installation folder"
         },
         n2: {
           question: "Basics features",
@@ -273,7 +273,7 @@ app.config(function ($translateProvider) {
         },
         n4: {
           question: "How to add new weapon on the server ?",
-          description: "answer"
+          description: "You have to edit the <strong>config.json</strong> file in the Void Clash installation folder. <br>You have to follow the documentation available on <a href='http://www.voidclash.com/documentation'>http://www.voidclash.com/documentation</a>."
         },
         n5: {
           question: "My server is online but I can't connect to it",
