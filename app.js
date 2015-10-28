@@ -53,7 +53,7 @@ app.config(function ($translateProvider) {
       },
       guns: {
         title: "A badass weapon system",
-        description: "The game allows you to choose between five weapon categories entirely customizable using more than ten parameters: You can modify the impact damage, the range, the energy cost and more !"
+        description: "The game allows you to choose between five weapon categories entirely customizable using more than twenty parameters: You can modify the impact damage, the range, the energy cost and more !"
       },
       team: {
         title: "Work with your teammates",
