@@ -33,7 +33,8 @@ app.config(function ($translateProvider) {
       community: "Community",
       get: "<u>Try now!</u>",
       greenlight: "Greenlit us",
-      doc: "doc"
+      doc: "doc",
+      changelog: "Patchnote"
     },
     headline: {
       greenlight: "We're now live on Steam Greenlight™ !<br>Please come to see us and give us some feedbacks :-)<br><a href='http://steamcommunity.com/sharedfiles/filedetails/?id=482273269'>check our page!</a>",
@@ -322,7 +323,8 @@ $translateProvider.translations('fr', {
     community: "Communauté",
     get: "<u>Essayez la beta!</u>",
     greenlight: "Greenlight",
-    doc: "doc"
+    doc: "doc",
+    changelog: "Patchnote"
   },
   headline: {
     greenlight: "On est maintenant sur Steam Greenlight™ ! <br>Venez nous apporter votre avis sur le jeu :-)",
